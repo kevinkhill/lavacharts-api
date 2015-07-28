@@ -1,0 +1,424 @@
+{
+    "name": "Khill\\Lavacharts\\Configs\\TextStyle",
+    "line": 22,
+    "short_desc": "Text Style ConfigObject",
+    "long_desc": "An object containing all the values for the textStyle which can be\npassed into the chart's options.",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Lavacharts"
+            ]
+        ],
+        "subpackage": [
+            [
+                "Configs"
+            ]
+        ],
+        "author": [
+            [
+                "Kevin",
+                "Hill",
+                "<kevinkhill@gmail.com>"
+            ]
+        ],
+        "copyright": [
+            [
+                "(c)",
+                "2015,",
+                "KHill",
+                "Designs"
+            ]
+        ],
+        "link": [
+            [
+                "http:\/\/github.com\/kevinkhill\/lavacharts",
+                "GitHub",
+                "Repository",
+                "Page"
+            ],
+            [
+                "http:\/\/lavacharts.com",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Official",
+                "Docs",
+                "Site"
+            ]
+        ],
+        "license": [
+            [
+                "http:\/\/opensource.org\/licenses\/MIT",
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Khill\\Lavacharts\\Configs",
+    "file": "\/home\/kevin\/projects\/php\/lavacharts-api\/..\/lavacharts\/src\/Configs\/TextStyle.php",
+    "relative_file": null,
+    "hash": "f9958b39f2519553aed02937236ce7725d692d7c",
+    "parent": "Khill\\Lavacharts\\Configs\\ConfigObject",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "bold": {
+            "name": "bold",
+            "line": 30,
+            "short_desc": "Text is bold.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        },
+        "color": {
+            "name": "color",
+            "line": 37,
+            "short_desc": "Color of the text.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        },
+        "fontName": {
+            "name": "fontName",
+            "line": 44,
+            "short_desc": "Font name.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        },
+        "fontSize": {
+            "name": "fontSize",
+            "line": 51,
+            "short_desc": "Size of font, in pixels.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        },
+        "italic": {
+            "name": "italic",
+            "line": 58,
+            "short_desc": "Text is italic.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 69,
+            "short_desc": "Builds the Options object.",
+            "long_desc": "Passing an array of key value pairs will set the configuration for each\nchild object created from this parent object.",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\TextStyle",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ],
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigProperty",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "config": {
+                    "name": "config",
+                    "line": 69,
+                    "short_desc": "Options for the TextStyle",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "bold": {
+            "name": "bold",
+            "line": 81,
+            "short_desc": "Set bold on\/off for the text element.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\TextStyle",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "bold": {
+                    "name": "bold",
+                    "line": 81,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "boolean",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "color": {
+            "name": "color",
+            "line": 104,
+            "short_desc": "Set the color for the text element.",
+            "long_desc": "valid HTML color string, for example: 'red' OR '#004411'",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\TextStyle",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "color": {
+                    "name": "color",
+                    "line": 104,
+                    "short_desc": "Valid HTML color",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "fontName": {
+            "name": "fontName",
+            "line": 128,
+            "short_desc": "Sets the font to the textStyle object.",
+            "long_desc": "Must be a valid font name.",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\TextStyle",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "fontName": {
+                    "name": "fontName",
+                    "line": 128,
+                    "short_desc": "Valid font name",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "fontSize": {
+            "name": "fontSize",
+            "line": 149,
+            "short_desc": "Sets the font size to the textStyle.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\TextStyle",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "fontSize": {
+                    "name": "fontSize",
+                    "line": 149,
+                    "short_desc": "Font size in pixels",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "italic": {
+            "name": "italic",
+            "line": 170,
+            "short_desc": "Set italic on\/off for the text element.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\TextStyle",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "italic": {
+                    "name": "italic",
+                    "line": 170,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "boolean",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

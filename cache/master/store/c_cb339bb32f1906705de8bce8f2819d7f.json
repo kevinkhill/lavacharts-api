@@ -1,0 +1,898 @@
+{
+    "name": "Khill\\Lavacharts\\Charts\\TreeMap",
+    "line": 35,
+    "short_desc": "TreeMap Chart Class",
+    "long_desc": "A visual representation of a data tree, where each node can have zero or more\nchildren, and one parent (except for the root, which has no parents). Each\nnode is displayed as a rectangle, sized and colored according to values that\nyou assign. Sizes and colors are valued relative to all other nodes in the\ngraph. You can specify how many levels to display simultaneously, and\noptionally to display deeper levels in a hinted fashion. If a node is a leaf\nnode, you can specify a size and color; if it is not a leaf, it will be\ndisplayed as a bounding box for leaf nodes. The default behavior is to move\ndown the tree when a user left-clicks a node, and to move back up the tree\nwhen a user right-clicks the graph.\n\nThe total size of the graph is determined by the size of the containing\nelement that you insert in your page. If you have leaf nodes with names too\nlong to show, the name will be truncated with an ellipsis (...).",
+    "hint": null,
+    "tags": {
+        "codeCoverageIgnore": [
+            [
+                ""
+            ]
+        ],
+        "package": [
+            [
+                "Lavacharts"
+            ]
+        ],
+        "subpackage": [
+            [
+                "Charts"
+            ]
+        ],
+        "author": [
+            [
+                "Kevin",
+                "Hill",
+                "<kevinkhill@gmail.com>"
+            ]
+        ],
+        "copyright": [
+            [
+                "(c)",
+                "2015,",
+                "KHill",
+                "Designs"
+            ]
+        ],
+        "link": [
+            [
+                "http:\/\/github.com\/kevinkhill\/lavacharts",
+                "GitHub",
+                "Repository",
+                "Page"
+            ],
+            [
+                "http:\/\/lavacharts.com",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Official",
+                "Docs",
+                "Site"
+            ]
+        ],
+        "license": [
+            [
+                "http:\/\/opensource.org\/licenses\/MIT",
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Khill\\Lavacharts\\Charts",
+    "file": "\/home\/kevin\/projects\/php\/lavacharts-api\/..\/lavacharts\/src\/Charts\/TreeMap.php",
+    "relative_file": null,
+    "hash": "98cff2637b6232740709c2d2a354e60a87eec660",
+    "parent": "Khill\\Lavacharts\\Charts\\Chart",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Label": "Khill\\Lavacharts\\Values\\Label",
+        "DataTable": "Khill\\Lavacharts\\DataTables\\DataTable"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 72,
+            "short_desc": "Builds a new chart with the given label.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\TreeMap",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "chartLabel": {
+                    "name": "chartLabel",
+                    "line": 72,
+                    "short_desc": "Identifying label for the chart.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Khill\\Lavacharts\\Charts\\Khill\\Lavacharts\\Values\\Label",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Khill\\Lavacharts\\Values\\Label",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "datatable": {
+                    "name": "datatable",
+                    "line": 72,
+                    "short_desc": "DataTable used for the chart.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Khill\\Lavacharts\\Charts\\Khill\\Lavacharts\\DataTables\\DataTable",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Khill\\Lavacharts\\DataTables\\DataTable",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "headerColor": {
+            "name": "headerColor",
+            "line": 105,
+            "short_desc": "The color of the header section for each node. Specify an HTML color value.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\TreeMap",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "headerColor": {
+                    "name": "headerColor",
+                    "line": 105,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "headerHeight": {
+            "name": "headerHeight",
+            "line": 116,
+            "short_desc": "The height of the header section for each node, in pixels (can be zero).",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\TreeMap",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "headerHeight": {
+                    "name": "headerHeight",
+                    "line": 116,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "headerHighlightColor": {
+            "name": "headerHighlightColor",
+            "line": 129,
+            "short_desc": "The color of the header of a node being hovered over. Specify an HTML\ncolor value or null; if null this value will be headerColor lightened\nby 35%",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\TreeMap",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "headerHighlightColor": {
+                    "name": "headerHighlightColor",
+                    "line": 129,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "maxColor": {
+            "name": "maxColor",
+            "line": 141,
+            "short_desc": "The color for a rectangle with a column 3 value of maxColorValue.",
+            "long_desc": "Specify an HTML color value.",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\TreeMap",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "maxColor": {
+                    "name": "maxColor",
+                    "line": 141,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "maxDepth": {
+            "name": "maxDepth",
+            "line": 156,
+            "short_desc": "The maximum number of node levels to show in the current view. Levels\nwill be flattened into the current plane. If your tree has more levels\nthan this, you will have to go up or down to see them. You can\nadditionally see maxPostDepth levels below this as shaded rectangles\nwithin these nodes.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\TreeMap",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "maxDepth": {
+                    "name": "maxDepth",
+                    "line": 156,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "maxHighlightColor": {
+            "name": "maxHighlightColor",
+            "line": 169,
+            "short_desc": "The highlight color to use for the node with the largest value in\ncolumn 3. Specify an HTML color value or null; If null, this value\nwill be the value of maxColor lightened by 35%.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\TreeMap",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "maxHighlightColor": {
+                    "name": "maxHighlightColor",
+                    "line": 169,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "maxPostDepth": {
+            "name": "maxPostDepth",
+            "line": 182,
+            "short_desc": "How many levels of nodes beyond maxDepth to show in \"hinted\" fashion.",
+            "long_desc": "Hinted nodes are shown as shaded rectangles within a node that is within\nthe maxDepth limit.",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\TreeMap",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "maxPostDepth": {
+                    "name": "maxPostDepth",
+                    "line": 182,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "maxColorValue": {
+            "name": "maxColorValue",
+            "line": 195,
+            "short_desc": "The maximum value allowed in column 3. All values greater than this will\nbe trimmed to this value. If set to null, it will be set to the max value\nin the column.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\TreeMap",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "maxColorValue": {
+                    "name": "maxColorValue",
+                    "line": 195,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "midColor": {
+            "name": "midColor",
+            "line": 207,
+            "short_desc": "The color for a rectangle with a column 3 value midway between\nmaxColorValue and minColorValue. Specify an HTML color value.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\TreeMap",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "midColor": {
+                    "name": "midColor",
+                    "line": 207,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "midHighlightColor": {
+            "name": "midHighlightColor",
+            "line": 221,
+            "short_desc": "The highlight color to use for the node with a column 3 value near the\nmedian of minColorValue and maxColorValue. Specify an HTML color value\nor null; if null, this value will be the value of midColor lightened\nby 35%.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\TreeMap",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "midHighlightColor": {
+                    "name": "midHighlightColor",
+                    "line": 221,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "minColor": {
+            "name": "minColor",
+            "line": 233,
+            "short_desc": "The color for a rectangle with the column 3 value of minColorValue.",
+            "long_desc": "Specify an HTML color value.",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\TreeMap",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "minColor": {
+                    "name": "minColor",
+                    "line": 233,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "minHighlightColor": {
+            "name": "minHighlightColor",
+            "line": 246,
+            "short_desc": "The highlight color to use for the node with a column 3 value nearest to\nminColorValue. Specify an HTML color value or null; if null, this value\nwill be the value of minColor lightened by 35%.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\TreeMap",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "minHighlightColor": {
+                    "name": "minHighlightColor",
+                    "line": 246,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "minColorValue": {
+            "name": "minColorValue",
+            "line": 259,
+            "short_desc": "The minimum value allowed in column 3. All values less than this will be\ntrimmed to this value. If set to null, it will be calculated as the\nminimum value in the column.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\TreeMap",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "minColorValue": {
+                    "name": "minColorValue",
+                    "line": 259,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "noColor": {
+            "name": "noColor",
+            "line": 272,
+            "short_desc": "The color to use for a rectangle when a node has no value for column 3,\nand that node is a leaf (or contains only leaves). Specify an HTML\ncolor value.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\TreeMap",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "noColor": {
+                    "name": "noColor",
+                    "line": 272,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "noHighlightColor": {
+            "name": "noHighlightColor",
+            "line": 285,
+            "short_desc": "The color to use for a rectangle of \"no\" color when highlighted. Specify\nan HTML color value or null; if null, this will be the value of noColor\nlightened by 35%.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\TreeMap",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "noHighlightColor": {
+                    "name": "noHighlightColor",
+                    "line": 285,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "showScale": {
+            "name": "showScale",
+            "line": 297,
+            "short_desc": "Whether or not to show a color gradient scale from minColor to maxColor\nalong the top of the chart. Specify true to show the scale.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\TreeMap",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "showScale": {
+                    "name": "showScale",
+                    "line": 297,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "showTooltips": {
+            "name": "showTooltips",
+            "line": 308,
+            "short_desc": "Whether or not to show tooltips.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\TreeMap",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "showTooltips": {
+                    "name": "showTooltips",
+                    "line": 308,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "fontColor": {
+            "name": "fontColor",
+            "line": 319,
+            "short_desc": "The text color. Specify an HTML color value.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\TreeMap",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "fontColor": {
+                    "name": "fontColor",
+                    "line": 319,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "fontFamily": {
+            "name": "fontFamily",
+            "line": 330,
+            "short_desc": "The font family to use for all text.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\TreeMap",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "fontFamily": {
+                    "name": "fontFamily",
+                    "line": 330,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "fontSize": {
+            "name": "fontSize",
+            "line": 341,
+            "short_desc": "The default font size, in pixels, of all text in the chart. You can\noverride this using properties for specific chart elements.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\TreeMap",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "fontSize": {
+                    "name": "fontSize",
+                    "line": 341,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": {
+        "TYPE": {
+            "name": "TYPE",
+            "line": 42,
+            "short_desc": "Javascript chart type.",
+            "long_desc": ""
+        },
+        "VERSION": {
+            "name": "VERSION",
+            "line": 49,
+            "short_desc": "Javascript chart version.",
+            "long_desc": ""
+        },
+        "VIZ_PACKAGE": {
+            "name": "VIZ_PACKAGE",
+            "line": 56,
+            "short_desc": "Javascript chart package.",
+            "long_desc": ""
+        },
+        "VIZ_CLASS": {
+            "name": "VIZ_CLASS",
+            "line": 63,
+            "short_desc": "Google's visualization class name.",
+            "long_desc": ""
+        }
+    }
+}

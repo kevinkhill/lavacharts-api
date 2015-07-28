@@ -1,0 +1,155 @@
+{
+    "name": "Khill\\Lavacharts\\Events\\Callback",
+    "line": 23,
+    "short_desc": "Callback Object",
+    "long_desc": "A generic callback class used to define javascript callbacks to be used within charts.",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Lavacharts"
+            ]
+        ],
+        "subpackage": [
+            [
+                "Events"
+            ]
+        ],
+        "since": [
+            [
+                "3.0.0"
+            ]
+        ],
+        "author": [
+            [
+                "Kevin",
+                "Hill",
+                "<kevinkhill@gmail.com>"
+            ]
+        ],
+        "copyright": [
+            [
+                "(c)",
+                "2015,",
+                "KHill",
+                "Designs"
+            ]
+        ],
+        "link": [
+            [
+                "http:\/\/github.com\/kevinkhill\/lavacharts",
+                "GitHub",
+                "Repository",
+                "Page"
+            ],
+            [
+                "http:\/\/lavacharts.com",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Official",
+                "Docs",
+                "Site"
+            ]
+        ],
+        "license": [
+            [
+                "http:\/\/opensource.org\/licenses\/MIT",
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Khill\\Lavacharts\\Events",
+    "file": "\/home\/kevin\/projects\/php\/lavacharts-api\/..\/lavacharts\/src\/Events\/Callback.php",
+    "relative_file": null,
+    "hash": "4c629813249831b45ef3b8eeef0a8c2a11e278bf",
+    "parent": "Khill\\Lavacharts\\Events\\Event",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Utils": "Khill\\Lavacharts\\Utils",
+        "InvalidConfigValue": "Khill\\Lavacharts\\Exceptions\\InvalidConfigValue"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "callback": {
+            "name": "callback",
+            "line": 30,
+            "short_desc": "Javascript callback function name.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 39,
+            "short_desc": "Builds the Event object.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Events\\Callback",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "c": {
+                    "name": "c",
+                    "line": 39,
+                    "short_desc": "Name of Javascript callback function.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

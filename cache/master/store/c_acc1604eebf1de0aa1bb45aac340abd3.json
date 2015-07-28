@@ -1,0 +1,176 @@
+{
+    "name": "Khill\\Lavacharts\\Dashboards\\ControlWrapper",
+    "line": 22,
+    "short_desc": "ControlWrapper Class",
+    "long_desc": "Used for building controls for dashboards.",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Lavacharts"
+            ]
+        ],
+        "subpackage": [
+            [
+                "Dashboards"
+            ]
+        ],
+        "since": [
+            [
+                "3.0.0"
+            ]
+        ],
+        "author": [
+            [
+                "Kevin",
+                "Hill",
+                "<kevinkhill@gmail.com>"
+            ]
+        ],
+        "copyright": [
+            [
+                "(c)",
+                "2015,",
+                "KHill",
+                "Designs"
+            ]
+        ],
+        "link": [
+            [
+                "http:\/\/github.com\/kevinkhill\/lavacharts",
+                "GitHub",
+                "Repository",
+                "Page"
+            ],
+            [
+                "http:\/\/lavacharts.com",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Official",
+                "Docs",
+                "Site"
+            ]
+        ],
+        "license": [
+            [
+                "http:\/\/opensource.org\/licenses\/MIT",
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Khill\\Lavacharts\\Dashboards",
+    "file": "\/home\/kevin\/projects\/php\/lavacharts-api\/..\/lavacharts\/src\/Dashboards\/ControlWrapper.php",
+    "relative_file": null,
+    "hash": "12e6ac81f3350219f0a6b59b36339972f84fda24",
+    "parent": "Khill\\Lavacharts\\Dashboards\\Wrapper",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "ElementId": "Khill\\Lavacharts\\Values\\ElementId",
+        "Filter": "Khill\\Lavacharts\\Dashboards\\Filters\\Filter"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 53,
+            "short_desc": "Builds a new Wrapper object.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Dashboards\\ControlWrapper",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [
+                "\"2\" @param tags are expected but only \"3\" found"
+            ],
+            "parameters": {
+                "filter": {
+                    "name": "filter",
+                    "line": 53,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Khill\\Lavacharts\\Dashboards\\Khill\\Lavacharts\\Dashboards\\Filters\\Filter",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Khill\\Lavacharts\\Dashboards\\Filters\\Filter",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "containerId": {
+                    "name": "containerId",
+                    "line": 53,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Khill\\Lavacharts\\Dashboards\\Khill\\Lavacharts\\Values\\ElementId",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Khill\\Lavacharts\\Values\\ElementId",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "jsonSerialize": {
+            "name": "jsonSerialize",
+            "line": 66,
+            "short_desc": "Custom serialization of the ControlWrapper.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": {
+        "VIZ_CLASS": {
+            "name": "VIZ_CLASS",
+            "line": 29,
+            "short_desc": "Google's visualization class name.",
+            "long_desc": ""
+        }
+    }
+}

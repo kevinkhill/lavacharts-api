@@ -1,0 +1,184 @@
+{
+    "name": "Khill\\Lavacharts\\Charts\\AreaChart",
+    "line": 24,
+    "short_desc": "AreaChart Class",
+    "long_desc": "An area chart that is rendered within the browser using SVG or VML. Displays\ntips when hovering over points.",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Lavacharts"
+            ]
+        ],
+        "subpackage": [
+            [
+                "Charts"
+            ]
+        ],
+        "since": [
+            [
+                "1.0.0"
+            ]
+        ],
+        "author": [
+            [
+                "Kevin",
+                "Hill",
+                "<kevinkhill@gmail.com>"
+            ]
+        ],
+        "copyright": [
+            [
+                "(c)",
+                "2015,",
+                "KHill",
+                "Designs"
+            ]
+        ],
+        "link": [
+            [
+                "http:\/\/github.com\/kevinkhill\/lavacharts",
+                "GitHub",
+                "Repository",
+                "Page"
+            ],
+            [
+                "http:\/\/lavacharts.com",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Official",
+                "Docs",
+                "Site"
+            ]
+        ],
+        "license": [
+            [
+                "http:\/\/opensource.org\/licenses\/MIT",
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Khill\\Lavacharts\\Charts",
+    "file": "\/home\/kevin\/projects\/php\/lavacharts-api\/..\/lavacharts\/src\/Charts\/AreaChart.php",
+    "relative_file": null,
+    "hash": "483b342b797e3557daed944820cda9b02a73c13e",
+    "parent": "Khill\\Lavacharts\\Charts\\Chart",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Label": "Khill\\Lavacharts\\Values\\Label",
+        "DataTable": "Khill\\Lavacharts\\DataTables\\DataTable"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Khill\\Lavacharts\\Traits\\AreaOpacityTrait": "Khill\\Lavacharts\\Traits\\AreaOpacityTrait",
+        "Khill\\Lavacharts\\Traits\\AxisTitlesPositionTrait": "Khill\\Lavacharts\\Traits\\AxisTitlesPositionTrait",
+        "Khill\\Lavacharts\\Traits\\FocusTargetTrait": "Khill\\Lavacharts\\Traits\\FocusTargetTrait",
+        "Khill\\Lavacharts\\Traits\\HorizontalAxisTrait": "Khill\\Lavacharts\\Traits\\HorizontalAxisTrait",
+        "Khill\\Lavacharts\\Traits\\InterpolateNullsTrait": "Khill\\Lavacharts\\Traits\\InterpolateNullsTrait",
+        "Khill\\Lavacharts\\Traits\\IsStackedTrait": "Khill\\Lavacharts\\Traits\\IsStackedTrait",
+        "Khill\\Lavacharts\\Traits\\LineWidthTrait": "Khill\\Lavacharts\\Traits\\LineWidthTrait",
+        "Khill\\Lavacharts\\Traits\\PointSizeTrait": "Khill\\Lavacharts\\Traits\\PointSizeTrait",
+        "Khill\\Lavacharts\\Traits\\VerticalAxesTrait": "Khill\\Lavacharts\\Traits\\VerticalAxesTrait",
+        "Khill\\Lavacharts\\Traits\\VerticalAxisTrait": "Khill\\Lavacharts\\Traits\\VerticalAxisTrait"
+    },
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 75,
+            "short_desc": "Builds a new chart with the given label.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\AreaChart",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "chartLabel": {
+                    "name": "chartLabel",
+                    "line": 75,
+                    "short_desc": "Identifying label for the chart.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Khill\\Lavacharts\\Charts\\Khill\\Lavacharts\\Values\\Label",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Khill\\Lavacharts\\Values\\Label",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "datatable": {
+                    "name": "datatable",
+                    "line": 75,
+                    "short_desc": "DataTable used for the chart.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Khill\\Lavacharts\\Charts\\Khill\\Lavacharts\\DataTables\\DataTable",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Khill\\Lavacharts\\DataTables\\DataTable",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": {
+        "TYPE": {
+            "name": "TYPE",
+            "line": 45,
+            "short_desc": "Javascript chart type.",
+            "long_desc": ""
+        },
+        "VERSION": {
+            "name": "VERSION",
+            "line": 52,
+            "short_desc": "Javascript chart version.",
+            "long_desc": ""
+        },
+        "VIZ_PACKAGE": {
+            "name": "VIZ_PACKAGE",
+            "line": 59,
+            "short_desc": "Javascript chart package.",
+            "long_desc": ""
+        },
+        "VIZ_CLASS": {
+            "name": "VIZ_CLASS",
+            "line": 66,
+            "short_desc": "Google's visualization class name.",
+            "long_desc": ""
+        }
+    }
+}

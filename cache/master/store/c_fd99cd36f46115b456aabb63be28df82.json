@@ -1,0 +1,214 @@
+{
+    "name": "Khill\\Lavacharts\\Charts\\DonutChart",
+    "line": 25,
+    "short_desc": "DonutChart Class",
+    "long_desc": "Alias for a pie chart with pieHolethat is rendered within the browser using SVG or VML. Displays\ntooltips when hovering over slices.",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Lavacharts"
+            ]
+        ],
+        "subpackage": [
+            [
+                "Charts"
+            ]
+        ],
+        "since": [
+            [
+                "1.0.0"
+            ]
+        ],
+        "author": [
+            [
+                "Kevin",
+                "Hill",
+                "<kevinkhill@gmail.com>"
+            ]
+        ],
+        "copyright": [
+            [
+                "(c)",
+                "2015,",
+                "KHill",
+                "Designs"
+            ]
+        ],
+        "link": [
+            [
+                "http:\/\/github.com\/kevinkhill\/lavacharts",
+                "GitHub",
+                "Repository",
+                "Page"
+            ],
+            [
+                "http:\/\/lavacharts.com",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Official",
+                "Docs",
+                "Site"
+            ]
+        ],
+        "license": [
+            [
+                "http:\/\/opensource.org\/licenses\/MIT",
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Khill\\Lavacharts\\Charts",
+    "file": "\/home\/kevin\/projects\/php\/lavacharts-api\/..\/lavacharts\/src\/Charts\/DonutChart.php",
+    "relative_file": null,
+    "hash": "2c7b00b5da9bc92bb17b2b36a5943b87a8cf2d88",
+    "parent": "Khill\\Lavacharts\\Charts\\PieChart",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Utils": "Khill\\Lavacharts\\Utils",
+        "Label": "Khill\\Lavacharts\\Values\\Label",
+        "DataTable": "Khill\\Lavacharts\\DataTables\\DataTable"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 62,
+            "short_desc": "Builds a new chart with the given label.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\DonutChart",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "chartLabel": {
+                    "name": "chartLabel",
+                    "line": 62,
+                    "short_desc": "Identifying label for the chart.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Khill\\Lavacharts\\Charts\\Khill\\Lavacharts\\Values\\Label",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Khill\\Lavacharts\\Values\\Label",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "datatable": {
+                    "name": "datatable",
+                    "line": 62,
+                    "short_desc": "DataTable used for the chart.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Khill\\Lavacharts\\Charts\\Khill\\Lavacharts\\DataTables\\DataTable",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Khill\\Lavacharts\\DataTables\\DataTable",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "pieHole": {
+            "name": "pieHole",
+            "line": 80,
+            "short_desc": "If between 0 and 1, displays a donut chart. The hole with have a radius\nequal to $pieHole times the radius of the chart.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Khill\\Lavacharts\\Charts\\DonutChart",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "pieHole": {
+                    "name": "pieHole",
+                    "line": 80,
+                    "short_desc": "Size of the pie hole.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ],
+                        [
+                            "float",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": {
+        "TYPE": {
+            "name": "TYPE",
+            "line": 32,
+            "short_desc": "Javascript chart type.",
+            "long_desc": ""
+        },
+        "VERSION": {
+            "name": "VERSION",
+            "line": 39,
+            "short_desc": "Javascript chart version.",
+            "long_desc": ""
+        },
+        "VIZ_PACKAGE": {
+            "name": "VIZ_PACKAGE",
+            "line": 46,
+            "short_desc": "Javascript chart package.",
+            "long_desc": ""
+        },
+        "VIZ_CLASS": {
+            "name": "VIZ_CLASS",
+            "line": 53,
+            "short_desc": "Google's visualization class name.",
+            "long_desc": ""
+        }
+    }
+}

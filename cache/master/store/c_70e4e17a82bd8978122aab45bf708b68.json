@@ -1,0 +1,348 @@
+{
+    "name": "Khill\\Lavacharts\\Configs\\SizeAxis",
+    "line": 22,
+    "short_desc": "SizeAxis Object",
+    "long_desc": "An object containing all the values for the sizeAxis which can be\npassed into the chart's options.",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Lavacharts"
+            ]
+        ],
+        "subpackage": [
+            [
+                "Configs"
+            ]
+        ],
+        "author": [
+            [
+                "Kevin",
+                "Hill",
+                "<kevinkhill@gmail.com>"
+            ]
+        ],
+        "copyright": [
+            [
+                "(c)",
+                "2015,",
+                "KHill",
+                "Designs"
+            ]
+        ],
+        "link": [
+            [
+                "http:\/\/github.com\/kevinkhill\/lavacharts",
+                "GitHub",
+                "Repository",
+                "Page"
+            ],
+            [
+                "http:\/\/lavacharts.com",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Official",
+                "Docs",
+                "Site"
+            ]
+        ],
+        "license": [
+            [
+                "http:\/\/opensource.org\/licenses\/MIT",
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Khill\\Lavacharts\\Configs",
+    "file": "\/home\/kevin\/projects\/php\/lavacharts-api\/..\/lavacharts\/src\/Configs\/SizeAxis.php",
+    "relative_file": null,
+    "hash": "b72d8b6df1d3c3f7ebc1e94669d53bcc8c5bd901",
+    "parent": "Khill\\Lavacharts\\Configs\\ConfigObject",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "InvalidConfigValue": "Khill\\Lavacharts\\Exceptions\\InvalidConfigValue"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "maxSize": {
+            "name": "maxSize",
+            "line": 29,
+            "short_desc": "Maximum radius of the largest possible bubble, in pixels.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        },
+        "maxValue": {
+            "name": "maxValue",
+            "line": 36,
+            "short_desc": "The size value to be mapped to $this->maxSize.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        },
+        "minSize": {
+            "name": "minSize",
+            "line": 43,
+            "short_desc": "Mininum radius of the smallest possible bubble, in pixels.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        },
+        "minValue": {
+            "name": "minValue",
+            "line": 50,
+            "short_desc": "The size value to be mapped to $this->minSize.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 65,
+            "short_desc": "Builds the Options object.",
+            "long_desc": "Passing an array of key value pairs will set the configuration for each\nchild object created from this parent object.",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\SizeAxis",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ],
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigProperty",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "config": {
+                    "name": "config",
+                    "line": 65,
+                    "short_desc": "An array containing configuration options.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "maxSize": {
+            "name": "maxSize",
+            "line": 76,
+            "short_desc": "Sets maximum radius of the largest possible bubble, in pixels",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\SizeAxis",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "maxSize": {
+                    "name": "maxSize",
+                    "line": 76,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "maxValue": {
+            "name": "maxValue",
+            "line": 97,
+            "short_desc": "Set the size value (as appears in the chart data) to be mapped to\n$this->maxSize. Larger values will be cropped to this value.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\SizeAxis",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "maxValue": {
+                    "name": "maxValue",
+                    "line": 97,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "minSize": {
+            "name": "minSize",
+            "line": 117,
+            "short_desc": "Sets mininum radius of the smallest possible bubble, in pixels",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\SizeAxis",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "minSize": {
+                    "name": "minSize",
+                    "line": 117,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "minValue": {
+            "name": "minValue",
+            "line": 138,
+            "short_desc": "Set the size value (as appears in the chart data) to be mapped to\n$this->minSize. Larger values will be cropped to this value.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\SizeAxis",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "minValue": {
+                    "name": "minValue",
+                    "line": 138,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

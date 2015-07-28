@@ -1,0 +1,239 @@
+{
+    "name": "Khill\\Lavacharts\\Charts\\ComboChart",
+    "line": 28,
+    "short_desc": "ComboChart Class",
+    "long_desc": "A chart that lets you render each series as a different marker type from the following list:\nline, area, bars, candlesticks and stepped area.\n\nTo assign a default marker type for series, specify the seriesType property.\nUse the series property to specify properties of each series individually.",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Lavacharts"
+            ]
+        ],
+        "subpackage": [
+            [
+                "Charts"
+            ]
+        ],
+        "since": [
+            [
+                "2.0.0"
+            ]
+        ],
+        "author": [
+            [
+                "Kevin",
+                "Hill",
+                "<kevinkhill@gmail.com>"
+            ]
+        ],
+        "copyright": [
+            [
+                "(c)",
+                "2015,",
+                "KHill",
+                "Designs"
+            ]
+        ],
+        "link": [
+            [
+                "http:\/\/github.com\/kevinkhill\/lavacharts",
+                "GitHub",
+                "Repository",
+                "Page"
+            ],
+            [
+                "http:\/\/lavacharts.com",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Official",
+                "Docs",
+                "Site"
+            ]
+        ],
+        "license": [
+            [
+                "http:\/\/opensource.org\/licenses\/MIT",
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Khill\\Lavacharts\\Charts",
+    "file": "\/home\/kevin\/projects\/php\/lavacharts-api\/..\/lavacharts\/src\/Charts\/ComboChart.php",
+    "relative_file": null,
+    "hash": "311751e2b2ae58895ff3028d10d498d335057c3a",
+    "parent": "Khill\\Lavacharts\\Charts\\Chart",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Utils": "Khill\\Lavacharts\\Utils",
+        "Label": "Khill\\Lavacharts\\Values\\Label",
+        "DataTable": "Khill\\Lavacharts\\DataTables\\DataTable"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Khill\\Lavacharts\\Traits\\AnnotationsTrait": "Khill\\Lavacharts\\Traits\\AnnotationsTrait",
+        "Khill\\Lavacharts\\Traits\\AreaOpacityTrait": "Khill\\Lavacharts\\Traits\\AreaOpacityTrait",
+        "Khill\\Lavacharts\\Traits\\AxisTitlesPositionTrait": "Khill\\Lavacharts\\Traits\\AxisTitlesPositionTrait",
+        "Khill\\Lavacharts\\Traits\\BarGroupWidthTrait": "Khill\\Lavacharts\\Traits\\BarGroupWidthTrait",
+        "Khill\\Lavacharts\\Traits\\CrosshairTrait": "Khill\\Lavacharts\\Traits\\CrosshairTrait",
+        "Khill\\Lavacharts\\Traits\\CurveTypeTrait": "Khill\\Lavacharts\\Traits\\CurveTypeTrait",
+        "Khill\\Lavacharts\\Traits\\DataOpacityTrait": "Khill\\Lavacharts\\Traits\\DataOpacityTrait",
+        "Khill\\Lavacharts\\Traits\\EnableInteractivityTrait": "Khill\\Lavacharts\\Traits\\EnableInteractivityTrait",
+        "Khill\\Lavacharts\\Traits\\FocusTargetTrait": "Khill\\Lavacharts\\Traits\\FocusTargetTrait",
+        "Khill\\Lavacharts\\Traits\\ForceIFrameTrait": "Khill\\Lavacharts\\Traits\\ForceIFrameTrait",
+        "Khill\\Lavacharts\\Traits\\HorizontalAxisTrait": "Khill\\Lavacharts\\Traits\\HorizontalAxisTrait",
+        "Khill\\Lavacharts\\Traits\\InterpolateNullsTrait": "Khill\\Lavacharts\\Traits\\InterpolateNullsTrait",
+        "Khill\\Lavacharts\\Traits\\IsStackedTrait": "Khill\\Lavacharts\\Traits\\IsStackedTrait",
+        "Khill\\Lavacharts\\Traits\\LineWidthTrait": "Khill\\Lavacharts\\Traits\\LineWidthTrait",
+        "Khill\\Lavacharts\\Traits\\OrientationTrait": "Khill\\Lavacharts\\Traits\\OrientationTrait",
+        "Khill\\Lavacharts\\Traits\\PointShapeTrait": "Khill\\Lavacharts\\Traits\\PointShapeTrait",
+        "Khill\\Lavacharts\\Traits\\PointSizeTrait": "Khill\\Lavacharts\\Traits\\PointSizeTrait",
+        "Khill\\Lavacharts\\Traits\\ReverseCategoriesTrait": "Khill\\Lavacharts\\Traits\\ReverseCategoriesTrait",
+        "Khill\\Lavacharts\\Traits\\SelectionModeTrait": "Khill\\Lavacharts\\Traits\\SelectionModeTrait",
+        "Khill\\Lavacharts\\Traits\\SeriesTrait": "Khill\\Lavacharts\\Traits\\SeriesTrait",
+        "Khill\\Lavacharts\\Traits\\ThemeTrait": "Khill\\Lavacharts\\Traits\\ThemeTrait",
+        "Khill\\Lavacharts\\Traits\\VerticalAxesTrait": "Khill\\Lavacharts\\Traits\\VerticalAxesTrait",
+        "Khill\\Lavacharts\\Traits\\VerticalAxisTrait": "Khill\\Lavacharts\\Traits\\VerticalAxisTrait"
+    },
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 92,
+            "short_desc": "Builds a new chart with the given label.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\ComboChart",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "chartLabel": {
+                    "name": "chartLabel",
+                    "line": 92,
+                    "short_desc": "Identifying label for the chart.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Khill\\Lavacharts\\Charts\\Khill\\Lavacharts\\Values\\Label",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Khill\\Lavacharts\\Values\\Label",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "datatable": {
+                    "name": "datatable",
+                    "line": 92,
+                    "short_desc": "DataTable used for the chart.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Khill\\Lavacharts\\Charts\\Khill\\Lavacharts\\DataTables\\DataTable",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Khill\\Lavacharts\\DataTables\\DataTable",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "seriesType": {
+            "name": "seriesType",
+            "line": 133,
+            "short_desc": "The default line type for any series not specified in the series property.",
+            "long_desc": "Available values are:\n'line', 'area', 'bars', 'candlesticks' and 'steppedArea'",
+            "hint": [
+                [
+                    "\\Khill\\Lavacharts\\Charts\\ComboChart",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "type": {
+                    "name": "type",
+                    "line": 133,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": {
+        "TYPE": {
+            "name": "TYPE",
+            "line": 62,
+            "short_desc": "Javascript chart type.",
+            "long_desc": ""
+        },
+        "VERSION": {
+            "name": "VERSION",
+            "line": 69,
+            "short_desc": "Javascript chart version.",
+            "long_desc": ""
+        },
+        "VIZ_PACKAGE": {
+            "name": "VIZ_PACKAGE",
+            "line": 76,
+            "short_desc": "Javascript chart package.",
+            "long_desc": ""
+        },
+        "VIZ_CLASS": {
+            "name": "VIZ_CLASS",
+            "line": 83,
+            "short_desc": "Google's visualization class name.",
+            "long_desc": ""
+        }
+    }
+}

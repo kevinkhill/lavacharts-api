@@ -1,0 +1,369 @@
+{
+    "name": "Khill\\Lavacharts\\Configs\\ColorAxis",
+    "line": 23,
+    "short_desc": "ColorAxis Object",
+    "long_desc": "An object that specifies a mapping between color column values and colors\nor a gradient scale.",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Lavacharts"
+            ]
+        ],
+        "subpackage": [
+            [
+                "Configs"
+            ]
+        ],
+        "author": [
+            [
+                "Kevin",
+                "Hill",
+                "<kevinkhill@gmail.com>"
+            ]
+        ],
+        "copyright": [
+            [
+                "(c)",
+                "2015,",
+                "KHill",
+                "Designs"
+            ]
+        ],
+        "link": [
+            [
+                "http:\/\/github.com\/kevinkhill\/lavacharts",
+                "GitHub",
+                "Repository",
+                "Page"
+            ],
+            [
+                "http:\/\/lavacharts.com",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Official",
+                "Docs",
+                "Site"
+            ]
+        ],
+        "license": [
+            [
+                "http:\/\/opensource.org\/licenses\/MIT",
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Khill\\Lavacharts\\Configs",
+    "file": "\/home\/kevin\/projects\/php\/lavacharts-api\/..\/lavacharts\/src\/Configs\/ColorAxis.php",
+    "relative_file": null,
+    "hash": "30478b1294e01d1d44724a5f327ae1ca825e0bf3",
+    "parent": "Khill\\Lavacharts\\Configs\\ConfigObject",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Utils": "Khill\\Lavacharts\\Utils",
+        "InvalidConfigValue": "Khill\\Lavacharts\\Exceptions\\InvalidConfigValue"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "minValue": {
+            "name": "minValue",
+            "line": 30,
+            "short_desc": "Minimum value for chart color data.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        },
+        "maxValue": {
+            "name": "maxValue",
+            "line": 37,
+            "short_desc": "Maximum value for chart color data.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        },
+        "values": {
+            "name": "values",
+            "line": 44,
+            "short_desc": "Controls how values are associated with colors.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        },
+        "colors": {
+            "name": "colors",
+            "line": 51,
+            "short_desc": "Colors to assign to values in the visualization.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 61,
+            "short_desc": "Builds the Options object.",
+            "long_desc": "Passing an array of key value pairs will set the configuration for each\nchild object created from this parent object.",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\ColorAxis",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ],
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigProperty",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "config": {
+                    "name": "config",
+                    "line": 61,
+                    "short_desc": "Array of options.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "minValue": {
+            "name": "minValue",
+            "line": 75,
+            "short_desc": "If present, specifies a minimum value for chart color data. Color data\nvalues of this value and lower will be rendered as the first color in\nthe $this->colors range.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\ColorAxis",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "minValue": {
+                    "name": "minValue",
+                    "line": 75,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Khill\\Lavacharts\\Configs\\numeric",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "maxValue": {
+            "name": "maxValue",
+            "line": 98,
+            "short_desc": "If present, specifies a maximum value for chart color data. Color data\nvalues of this value and higher will be rendered as the last color in\nthe $this->colors range.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\ColorAxis",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "maxValue": {
+                    "name": "maxValue",
+                    "line": 98,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Khill\\Lavacharts\\Configs\\numeric",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "values": {
+            "name": "values",
+            "line": 125,
+            "short_desc": "If present, controls how values are associated with colors. Each value\nis associated with the corresponding color in the $this->colors array.",
+            "long_desc": "These values apply to the chart color data.\n\nColoring is done according to a gradient of the values specified here.\nNot specifying a value for this option is equivalent to specifying\n[minValue, maxValue].",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\ColorAxis",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "values": {
+                    "name": "values",
+                    "line": 125,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "colors": {
+            "name": "colors",
+            "line": 153,
+            "short_desc": "Colors to assign to values in the visualization. An array of strings,\nwhere each element is an HTML color string.",
+            "long_desc": "For example: $this->colors = array('red', '#004411')\nYou must have at least two values; the gradient will include all your\nvalues, plus calculated intermediary values, with the first color as the\nsmallest value, and the last color as the highest.",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\ColorAxis",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "colors": {
+                    "name": "colors",
+                    "line": 153,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

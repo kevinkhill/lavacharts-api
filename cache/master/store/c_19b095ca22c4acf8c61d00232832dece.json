@@ -1,0 +1,145 @@
+{
+    "name": "Khill\\Lavacharts\\DataTables\\Columns\\StringColumn",
+    "line": 23,
+    "short_desc": "StringColumn Object",
+    "long_desc": "String columns are for string type data in the DataTable.",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Lavacharts"
+            ]
+        ],
+        "subpackage": [
+            [
+                "DataTables\\Columns"
+            ]
+        ],
+        "since": [
+            [
+                "3.0.0"
+            ]
+        ],
+        "author": [
+            [
+                "Kevin",
+                "Hill",
+                "<kevinkhill@gmail.com>"
+            ]
+        ],
+        "copyright": [
+            [
+                "(c)",
+                "2015,",
+                "KHill",
+                "Designs"
+            ]
+        ],
+        "link": [
+            [
+                "http:\/\/github.com\/kevinkhill\/lavacharts",
+                "GitHub",
+                "Repository",
+                "Page"
+            ],
+            [
+                "http:\/\/lavacharts.com",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Official",
+                "Docs",
+                "Site"
+            ]
+        ],
+        "license": [
+            [
+                "http:\/\/opensource.org\/licenses\/MIT",
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Khill\\Lavacharts\\DataTables\\Columns",
+    "file": "\/home\/kevin\/projects\/php\/lavacharts-api\/..\/lavacharts\/src\/Datatables\/Columns\/StringColumn.php",
+    "relative_file": null,
+    "hash": "ea81aeb846af2571b0178efa6bf843ceb6e302a9",
+    "parent": "Khill\\Lavacharts\\DataTables\\Columns\\Column",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Label": "Khill\\Lavacharts\\Values\\Label",
+        "Format": "Khill\\Lavacharts\\Formats\\Format"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 39,
+            "short_desc": "Creates a new Column with the defined label.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\DataTables\\Columns\\StringColumn",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "label": {
+                    "name": "label",
+                    "line": 39,
+                    "short_desc": "Label for the column.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "''",
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": {
+        "TYPE": {
+            "name": "TYPE",
+            "line": 30,
+            "short_desc": "Type of column.",
+            "long_desc": ""
+        }
+    }
+}

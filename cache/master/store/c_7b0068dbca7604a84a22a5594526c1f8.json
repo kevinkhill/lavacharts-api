@@ -1,0 +1,145 @@
+{
+    "name": "Khill\\Lavacharts\\Dashboards\\Bindings\\ManyToMany",
+    "line": 19,
+    "short_desc": "ManyToMany Binding Class",
+    "long_desc": "Binds multiple ControlWrappers to a multiple ChartWrapper for use in dashboards.",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Lavacharts"
+            ]
+        ],
+        "subpackage": [
+            [
+                "Dashboards\\Bindings"
+            ]
+        ],
+        "since": [
+            [
+                "3.0.0"
+            ]
+        ],
+        "author": [
+            [
+                "Kevin",
+                "Hill",
+                "<kevinkhill@gmail.com>"
+            ]
+        ],
+        "copyright": [
+            [
+                "(c)",
+                "2015,",
+                "KHill",
+                "Designs"
+            ]
+        ],
+        "link": [
+            [
+                "http:\/\/github.com\/kevinkhill\/lavacharts",
+                "GitHub",
+                "Repository",
+                "Page"
+            ],
+            [
+                "http:\/\/lavacharts.com",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Official",
+                "Docs",
+                "Site"
+            ]
+        ],
+        "license": [
+            [
+                "http:\/\/opensource.org\/licenses\/MIT",
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Khill\\Lavacharts\\Dashboards\\Bindings",
+    "file": "\/home\/kevin\/projects\/php\/lavacharts-api\/..\/lavacharts\/src\/Dashboards\/Bindings\/ManyToMany.php",
+    "relative_file": null,
+    "hash": "72ee7e6d8497526c100e412b1e7df8bf84d8a9d9",
+    "parent": "Khill\\Lavacharts\\Dashboards\\Bindings\\Binding",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 35,
+            "short_desc": "Creates the new Binding.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Dashboards\\Bindings\\ManyToMany",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [
+                "The \"chartWrappers\" @param tag variable name is wrong (should be \"controlWrappers\")",
+                "The \"controlWrappers\" @param tag variable name is wrong (should be \"chartWrappers\")"
+            ],
+            "parameters": {
+                "controlWrappers": {
+                    "name": "controlWrappers",
+                    "line": 35,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "chartWrappers": {
+                    "name": "chartWrappers",
+                    "line": 35,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": {
+        "TYPE": {
+            "name": "TYPE",
+            "line": 26,
+            "short_desc": "Type of binding.",
+            "long_desc": ""
+        }
+    }
+}

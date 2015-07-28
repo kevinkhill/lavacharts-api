@@ -1,0 +1,212 @@
+{
+    "name": "Khill\\Lavacharts\\Configs\\MagnifyingGlass",
+    "line": 25,
+    "short_desc": "MagnifyingGlass Object",
+    "long_desc": "An object containing all the values for the magnifying glass which can\nbe passed into the chart's options.\nIf created with no parameter, it defaults to enabled with a zoom factor\nof 5.\nPassing a number in upon creation, then the zoomFactor will be set.",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Lavacharts"
+            ]
+        ],
+        "subpackage": [
+            [
+                "Configs"
+            ]
+        ],
+        "author": [
+            [
+                "Kevin",
+                "Hill",
+                "<kevinkhill@gmail.com>"
+            ]
+        ],
+        "copyright": [
+            [
+                "(c)",
+                "2015,",
+                "KHill",
+                "Designs"
+            ]
+        ],
+        "link": [
+            [
+                "http:\/\/github.com\/kevinkhill\/lavacharts",
+                "GitHub",
+                "Repository",
+                "Page"
+            ],
+            [
+                "http:\/\/lavacharts.com",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Official",
+                "Docs",
+                "Site"
+            ]
+        ],
+        "license": [
+            [
+                "http:\/\/opensource.org\/licenses\/MIT",
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Khill\\Lavacharts\\Configs",
+    "file": "\/home\/kevin\/projects\/php\/lavacharts-api\/..\/lavacharts\/src\/Configs\/MagnifyingGlass.php",
+    "relative_file": null,
+    "hash": "735580766a4672f88d50a9304510a5b7d7b8b039",
+    "parent": "Khill\\Lavacharts\\Configs\\ConfigObject",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "InvalidConfigValue": "Khill\\Lavacharts\\Exceptions\\InvalidConfigValue"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "enable": {
+            "name": "enable",
+            "line": 32,
+            "short_desc": "Enabled state of the magnifying glass.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": {
+                "name": {
+                    "parts": [
+                        "true"
+                    ]
+                }
+            },
+            "errors": []
+        },
+        "zoomFactor": {
+            "name": "zoomFactor",
+            "line": 39,
+            "short_desc": "Zoom factor of the magnifying glass.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 53,
+            "short_desc": "Builds the Options object.",
+            "long_desc": "Passing an array of key value pairs will set the configuration for each\nchild object created from this parent object.",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\MagnifyingGlass",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ],
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigProperty",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "zoomFactor": {
+                    "name": "zoomFactor",
+                    "line": 53,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "5",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "zoomFactor": {
+            "name": "zoomFactor",
+            "line": 66,
+            "short_desc": "The zoom factor of the magnifying glass.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\MagnifyingGlass",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "zoomFactor": {
+                    "name": "zoomFactor",
+                    "line": 66,
+                    "short_desc": "Can be any number greater than 0.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

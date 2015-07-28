@@ -1,0 +1,145 @@
+{
+    "name": "Khill\\Lavacharts\\DataTables\\Columns\\TimeOfDayColumn",
+    "line": 23,
+    "short_desc": "TimeOfDayColumn Object",
+    "long_desc": "TimeOfDay columns are for Carbon objects or strings representing time in the DataTable.",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Lavacharts"
+            ]
+        ],
+        "subpackage": [
+            [
+                "DataTables\\Columns"
+            ]
+        ],
+        "since": [
+            [
+                "3.0.0"
+            ]
+        ],
+        "author": [
+            [
+                "Kevin",
+                "Hill",
+                "<kevinkhill@gmail.com>"
+            ]
+        ],
+        "copyright": [
+            [
+                "(c)",
+                "2015,",
+                "KHill",
+                "Designs"
+            ]
+        ],
+        "link": [
+            [
+                "http:\/\/github.com\/kevinkhill\/lavacharts",
+                "GitHub",
+                "Repository",
+                "Page"
+            ],
+            [
+                "http:\/\/lavacharts.com",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Official",
+                "Docs",
+                "Site"
+            ]
+        ],
+        "license": [
+            [
+                "http:\/\/opensource.org\/licenses\/MIT",
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Khill\\Lavacharts\\DataTables\\Columns",
+    "file": "\/home\/kevin\/projects\/php\/lavacharts-api\/..\/lavacharts\/src\/Datatables\/Columns\/TimeOfDayColumn.php",
+    "relative_file": null,
+    "hash": "e307b7d4c877e72343e7e91d5abbbde0dd3da3f7",
+    "parent": "Khill\\Lavacharts\\DataTables\\Columns\\DateColumn",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Label": "Khill\\Lavacharts\\Values\\Label",
+        "Format": "Khill\\Lavacharts\\Formats\\Format"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 39,
+            "short_desc": "Creates a new Column with the defined label.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\DataTables\\Columns\\TimeOfDayColumn",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "label": {
+                    "name": "label",
+                    "line": 39,
+                    "short_desc": "Label for the column.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Khill\\Lavacharts\\DataTables\\Columns\\Khill\\Lavacharts\\Values\\Label",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Khill\\Lavacharts\\Values\\Label",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": {
+        "TYPE": {
+            "name": "TYPE",
+            "line": 30,
+            "short_desc": "Type of column.",
+            "long_desc": ""
+        }
+    }
+}

@@ -1,0 +1,427 @@
+{
+    "name": "Khill\\Lavacharts\\Configs\\Series",
+    "line": 23,
+    "short_desc": "Series ConfigObject",
+    "long_desc": "An object containing all the values for a single series in a multiple data\nset chart, which can be passed into the series property of the chart's options.",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Lavacharts"
+            ]
+        ],
+        "subpackage": [
+            [
+                "Configs"
+            ]
+        ],
+        "author": [
+            [
+                "Kevin",
+                "Hill",
+                "<kevinkhill@gmail.com>"
+            ]
+        ],
+        "copyright": [
+            [
+                "(c)",
+                "2015,",
+                "KHill",
+                "Designs"
+            ]
+        ],
+        "link": [
+            [
+                "http:\/\/github.com\/kevinkhill\/lavacharts",
+                "GitHub",
+                "Repository",
+                "Page"
+            ],
+            [
+                "http:\/\/lavacharts.com",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Official",
+                "Docs",
+                "Site"
+            ]
+        ],
+        "license": [
+            [
+                "http:\/\/opensource.org\/licenses\/MIT",
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Khill\\Lavacharts\\Configs",
+    "file": "\/home\/kevin\/projects\/php\/lavacharts-api\/..\/lavacharts\/src\/Configs\/Series.php",
+    "relative_file": null,
+    "hash": "317299d9d1e06294e6ad5f5139218f357e215cc0",
+    "parent": "Khill\\Lavacharts\\Configs\\ConfigObject",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Utils": "Khill\\Lavacharts\\Utils",
+        "InvalidConfigValue": "Khill\\Lavacharts\\Exceptions\\InvalidConfigValue"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "annotation": {
+            "name": "annotation",
+            "line": 30,
+            "short_desc": "Alignment of the series.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Khill\\Lavacharts\\Configs\\Annotation",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        },
+        "curveType": {
+            "name": "curveType",
+            "line": 37,
+            "short_desc": "Overrides the global curveType value for this series.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        },
+        "targetAxisIndex": {
+            "name": "targetAxisIndex",
+            "line": 44,
+            "short_desc": "Which axis is the target of the series definition.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        },
+        "textStyle": {
+            "name": "textStyle",
+            "line": 51,
+            "short_desc": "Text style of the series.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Khill\\Lavacharts\\Configs\\TextStyle",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        },
+        "type": {
+            "name": "type",
+            "line": 58,
+            "short_desc": "The type of marker for this series.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 67,
+            "short_desc": "Builds the Options object.",
+            "long_desc": "Passing an array of key value pairs will set the configuration for each\nchild object created from this parent object.",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\Series",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ],
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigProperty",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "config": {
+                    "name": "config",
+                    "line": 67,
+                    "short_desc": "Options for the series",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "annotation": {
+            "name": "annotation",
+            "line": 80,
+            "short_desc": "An object to be applied to annotations for this series.",
+            "long_desc": "This can be used to control, for instance, the textStyle for the series.",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\Series",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "annotation": {
+                    "name": "annotation",
+                    "line": 80,
+                    "short_desc": "Style of the series annotations",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Khill\\Lavacharts\\Configs\\Khill\\Lavacharts\\Configs\\Annotation",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Khill\\Lavacharts\\Configs\\Annotation",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "curveType": {
+            "name": "curveType",
+            "line": 106,
+            "short_desc": "Controls the curve of the lines when the line width is not zero.",
+            "long_desc": "Can be one of the following:\n'none'     - Straight lines without curve.\n'function' - The angles of the line will be smoothed.",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\Series",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "curveType": {
+                    "name": "curveType",
+                    "line": 106,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "targetAxisIndex": {
+            "name": "targetAxisIndex",
+            "line": 141,
+            "short_desc": "Which axis to assign this series to.",
+            "long_desc": "0 is the default axis, and 1 is the opposite axis.\n\nDefault value is 0; set to 1 to define a chart where different series\nare rendered against different axes.\n\nAt least one series much be allocated to the default axis.\nYou can define a different scale for different axes.",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\Series",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "index": {
+                    "name": "index",
+                    "line": 141,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "type": {
+            "name": "type",
+            "line": 164,
+            "short_desc": "The default line type for any series not specified in the series property.",
+            "long_desc": "Available values are:\n'line', 'area', 'bars', 'candlesticks' and 'steppedArea'",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\Series",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "type": {
+                    "name": "type",
+                    "line": 164,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "textStyle": {
+            "name": "textStyle",
+            "line": 194,
+            "short_desc": "An object that specifies the series text style.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\Series",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "textStyle": {
+                    "name": "textStyle",
+                    "line": 194,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Khill\\Lavacharts\\Configs\\Khill\\Lavacharts\\Configs\\TextStyle",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Khill\\Lavacharts\\Configs\\TextStyle",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

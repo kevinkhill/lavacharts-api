@@ -1,0 +1,296 @@
+{
+    "name": "Khill\\Lavacharts\\Configs\\Legend",
+    "line": 23,
+    "short_desc": "Legend ConfigObject",
+    "long_desc": "An object containing all the values for the legend which can be\npassed into the chart's options.",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Lavacharts"
+            ]
+        ],
+        "subpackage": [
+            [
+                "Configs"
+            ]
+        ],
+        "author": [
+            [
+                "Kevin",
+                "Hill",
+                "<kevinkhill@gmail.com>"
+            ]
+        ],
+        "copyright": [
+            [
+                "(c)",
+                "2015,",
+                "KHill",
+                "Designs"
+            ]
+        ],
+        "link": [
+            [
+                "http:\/\/github.com\/kevinkhill\/lavacharts",
+                "GitHub",
+                "Repository",
+                "Page"
+            ],
+            [
+                "http:\/\/lavacharts.com",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Official",
+                "Docs",
+                "Site"
+            ]
+        ],
+        "license": [
+            [
+                "http:\/\/opensource.org\/licenses\/MIT",
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Khill\\Lavacharts\\Configs",
+    "file": "\/home\/kevin\/projects\/php\/lavacharts-api\/..\/lavacharts\/src\/Configs\/Legend.php",
+    "relative_file": null,
+    "hash": "37409575a3712ffdbceeaabf41c5295be94198c5",
+    "parent": "Khill\\Lavacharts\\Configs\\ConfigObject",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Utils": "Khill\\Lavacharts\\Utils",
+        "InvalidConfigValue": "Khill\\Lavacharts\\Exceptions\\InvalidConfigValue"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "position": {
+            "name": "position",
+            "line": 30,
+            "short_desc": "Position of the legend.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        },
+        "alignment": {
+            "name": "alignment",
+            "line": 37,
+            "short_desc": "Alignment of the legend.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        },
+        "textStyle": {
+            "name": "textStyle",
+            "line": 44,
+            "short_desc": "Text style of the legend.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Khill\\Lavacharts\\Configs\\TextStyle",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 55,
+            "short_desc": "Builds the Options object.",
+            "long_desc": "Passing an array of key value pairs will set the configuration for each\nchild object created from this parent object.",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\Legend",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigValue",
+                    ""
+                ],
+                [
+                    "\\Khill\\Lavacharts\\Exceptions\\InvalidConfigProperty",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "config": {
+                    "name": "config",
+                    "line": 55,
+                    "short_desc": "Options for the legend",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "position": {
+            "name": "position",
+            "line": 73,
+            "short_desc": "Sets the position of the legend.",
+            "long_desc": "Can be one of the following:\n'right'  - To the right of the chart. Incompatible with the vAxes option.\n'top'    - Above the chart.\n'bottom' - Below the chart.\n'in'     - Inside the chart, by the top left corner.\n'none'   - No legend is displayed.",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\Legend",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "position": {
+                    "name": "position",
+                    "line": 73,
+                    "short_desc": "Location of legend.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "alignment": {
+            "name": "alignment",
+            "line": 114,
+            "short_desc": "Sets the alignment of the legend.",
+            "long_desc": "Can be one of the following:\n'start'  - Aligned to the start of the area allocated for the legend.\n'center' - Centered in the area allocated for the legend.\n'end'    - Aligned to the end of the area allocated for the legend.\n\nStart, center, and end are relative to the style -- vertical or horizontal -- of the legend.\nFor example, in a 'right' legend, 'start' and 'end' are at the top and bottom, respectively;\nfor a 'top' legend, 'start' and 'end' would be at the left and right of the area, respectively.\n\nThe default value depends on the legend's position. For 'bottom' legends,\nthe default is 'center'; other legends default to 'start'.",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\Legend",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "alignment": {
+                    "name": "alignment",
+                    "line": 114,
+                    "short_desc": "Alignment of the legend.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "textStyle": {
+            "name": "textStyle",
+            "line": 141,
+            "short_desc": "An object that specifies the legend text style.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Configs\\Legend",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "textStyle": {
+                    "name": "textStyle",
+                    "line": 141,
+                    "short_desc": "Style of the legend",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Khill\\Lavacharts\\Configs\\Khill\\Lavacharts\\Configs\\TextStyle",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Khill\\Lavacharts\\Configs\\TextStyle",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

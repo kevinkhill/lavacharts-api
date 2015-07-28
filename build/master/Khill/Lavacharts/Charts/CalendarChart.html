@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Khill\Lavacharts\Charts\CalendarChart | Lavacharts API</title>
+
+                <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+    
+    <link rel="icon" href="../../../images/favicon.ico" type="image/x-icon">
+
+    
+    </head>
+
+    <body id="class" data-name="class:Khill_Lavacharts_Charts_CalendarChart" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">
+                    <img src="../../../images/lava-logo.gif" />
+                                    </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Khill.html">Khill</a></li>
+                                        <li><a href="../../../Khill/Lavacharts.html">Lavacharts</a></li>
+                                        <li><a href="../../../Khill/Lavacharts/Charts.html">Charts</a></li>
+    
+                <li>CalendarChart</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>CalendarChart</h1>
+    </div>
+
+    <p>    class
+    <strong>CalendarChart</strong>        extends <abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr>
+</p>
+
+            <div class="description">
+            <p>CalendarChart Class</p>            <p>A calendar chart is a visualization used to show activity over the course of a long span of time,
+such as months or years. They're best used when you want to illustrate how some quantity varies
+depending on the day of the week, or how it trends over time.</p>        </div>
+    
+            <h2>Traits</h2>
+
+        <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Khill\Lavacharts\Traits\ColorAxisTrait">Khill\Lavacharts\Traits\ColorAxisTrait</abbr>
+                                    </div>
+                <div class="col-md-6">
+                    
+
+                </div>
+            </div>
+            </div>
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>TYPE</td>
+                <td class="last">
+                    <p><em>Javascript chart type.</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>VERSION</td>
+                <td class="last">
+                    <p><em>Javascript chart version.</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>VIZ_PACKAGE</td>
+                <td class="last">
+                    <p><em>Javascript chart package.</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+                    <tr>
+                <td>VIZ_CLASS</td>
+                <td class="last">
+                    <p><em>Google's visualization class name.</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Values\Label">Label</abbr> $chartLabel, <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\DataTables\DataTable">DataTable</abbr> $datatable)
+                                            <p>Builds a new chart with the given label.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOption">getOption</a>(string $o)
+                                            <p>Gets a specific option from the array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cellColor">cellColor</a>(<abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr> $stroke)
+                                            <p>The cellColor option lets you customize the border of the calendar day squares</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cellSize">cellSize</a>(integer $cellSize)
+                                            <p>Sets the size of the calendar day squares</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dayOfWeekLabel">dayOfWeekLabel</a>(<abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\TextStyle">TextStyle</abbr> $label)
+                                            <p>Controls the font style of the week labels at the top of the chart.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dayOfWeekRightSpace">dayOfWeekRightSpace</a>(integer $space)
+                                            <p>Sets The distance between the right edge of the week labels and
+the left edge of the chart day squares.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_daysOfWeek">daysOfWeek</a>(string $days)
+                                            <p>The single-letter labels to use for Sunday through Saturday.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_focusedCellColor">focusedCellColor</a>(<abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr> $stroke)
+                                            <p>When the user focuses (say, by hovering) over a day square,
+calendar charts will highlight the square.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_monthLabel">monthLabel</a>(<abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\TextStyle">TextStyle</abbr> $label)
+                                            <p>Sets the style for the month labels.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_monthOutlineColor">monthOutlineColor</a>(<abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr> $stroke)
+                                            <p>Months with data values are delineated from others using a border in this style.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_underMonthSpace">underMonthSpace</a>(integer $space)
+                                            <p>The number of pixels between the bottom of the month labels and
+the top of the day squares.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_underYearSpace">underYearSpace</a>(integer $space)
+                                            <p>The number of pixels between the bottom-most year label and
+the bottom of the chart.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unusedMonthOutlineColor">unusedMonthOutlineColor</a>(<abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr> $stroke)
+                                            <p>Months without data values are delineated from others using a border in this style.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_forceIFrame">forceIFrame</a>(bool $iframe)
+                                            <p>Draws the chart inside an inline frame.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_noDataPattern">noDataPattern</a>(<abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Color">Color</abbr> $color)
+                                            <p>An object that specifies a mapping between color column values and colors or a gradient scale.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 71</div>
+        <code>                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+    <strong>__construct</strong>(<abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Values\Label">Label</abbr> $chartLabel, <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\DataTables\DataTable">DataTable</abbr> $datatable)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Builds a new chart with the given label.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Values\Label">Label</abbr></td>
+                <td>$chartLabel</td>
+                <td>Identifying label for the chart.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\DataTables\DataTable">DataTable</abbr></td>
+                <td>$datatable</td>
+                <td>DataTable used for the chart.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOption">
+        <div class="location">at line 125</div>
+        <code>                    mixed
+    <strong>getOption</strong>(string $o)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets a specific option from the array.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$o</td>
+                <td>Which option to fetch</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigValue">InvalidConfigValue</abbr></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cellColor">
+        <div class="location">at line 150</div>
+        <code>                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+    <strong>cellColor</strong>(<abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr> $stroke)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>The cellColor option lets you customize the border of the calendar day squares</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr></td>
+                <td>$stroke</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cellSize">
+        <div class="location">at line 161</div>
+        <code>                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+    <strong>cellSize</strong>(integer $cellSize)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the size of the calendar day squares</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$cellSize</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dayOfWeekLabel">
+        <div class="location">at line 179</div>
+        <code>                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+    <strong>dayOfWeekLabel</strong>(<abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\TextStyle">TextStyle</abbr> $label)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Controls the font style of the week labels at the top of the chart.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\TextStyle">TextStyle</abbr></td>
+                <td>$label</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dayOfWeekRightSpace">
+        <div class="location">at line 191</div>
+        <code>                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+    <strong>dayOfWeekRightSpace</strong>(integer $space)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets The distance between the right edge of the week labels and
+the left edge of the chart day squares.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$space</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_daysOfWeek">
+        <div class="location">at line 209</div>
+        <code>                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+    <strong>daysOfWeek</strong>(string $days)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>The single-letter labels to use for Sunday through Saturday.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$days</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_focusedCellColor">
+        <div class="location">at line 228</div>
+        <code>                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+    <strong>focusedCellColor</strong>(<abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr> $stroke)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>When the user focuses (say, by hovering) over a day square,
+calendar charts will highlight the square.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr></td>
+                <td>$stroke</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_monthLabel">
+        <div class="location">at line 239</div>
+        <code>                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+    <strong>monthLabel</strong>(<abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\TextStyle">TextStyle</abbr> $label)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the style for the month labels.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\TextStyle">TextStyle</abbr></td>
+                <td>$label</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_monthOutlineColor">
+        <div class="location">at line 250</div>
+        <code>                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+    <strong>monthOutlineColor</strong>(<abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr> $stroke)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Months with data values are delineated from others using a border in this style.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr></td>
+                <td>$stroke</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_underMonthSpace">
+        <div class="location">at line 262</div>
+        <code>                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+    <strong>underMonthSpace</strong>(integer $space)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>The number of pixels between the bottom of the month labels and
+the top of the day squares.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$space</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_underYearSpace">
+        <div class="location">at line 281</div>
+        <code>                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+    <strong>underYearSpace</strong>(integer $space)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>The number of pixels between the bottom-most year label and
+the bottom of the chart.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$space</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unusedMonthOutlineColor">
+        <div class="location">at line 299</div>
+        <code>                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+    <strong>unusedMonthOutlineColor</strong>(<abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr> $stroke)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Months without data values are delineated from others using a border in this style.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr></td>
+                <td>$stroke</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_forceIFrame">
+        <div class="location">at line 311</div>
+        <code>                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+    <strong>forceIFrame</strong>(bool $iframe)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Draws the chart inside an inline frame.</p>                    <p>Note that on IE8, this option is ignored; all IE8 charts are drawn in i-frames.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$iframe</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_noDataPattern">
+        <div class="location">at line 329</div>
+        <code>                    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
+    <strong>noDataPattern</strong>(<abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Color">Color</abbr> $color)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>An object that specifies a mapping between color column values and colors or a gradient scale.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Color">Color</abbr></td>
+                <td>$color</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

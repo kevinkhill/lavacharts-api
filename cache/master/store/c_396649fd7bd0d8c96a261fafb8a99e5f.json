@@ -1,0 +1,160 @@
+{
+    "name": "Khill\\Lavacharts\\Dashboards\\Bindings\\OneToOne",
+    "line": 24,
+    "short_desc": "Binding Class",
+    "long_desc": "Binds a single ControlWrapper to a single ChartWrapper for use in dashboards.",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Lavacharts"
+            ]
+        ],
+        "subpackage": [
+            [
+                "Dashboards\\Bindings"
+            ]
+        ],
+        "since": [
+            [
+                "3.0.0"
+            ]
+        ],
+        "author": [
+            [
+                "Kevin",
+                "Hill",
+                "<kevinkhill@gmail.com>"
+            ]
+        ],
+        "copyright": [
+            [
+                "(c)",
+                "2015,",
+                "KHill",
+                "Designs"
+            ]
+        ],
+        "link": [
+            [
+                "http:\/\/github.com\/kevinkhill\/lavacharts",
+                "GitHub",
+                "Repository",
+                "Page"
+            ],
+            [
+                "http:\/\/lavacharts.com",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Official",
+                "Docs",
+                "Site"
+            ]
+        ],
+        "license": [
+            [
+                "http:\/\/opensource.org\/licenses\/MIT",
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Khill\\Lavacharts\\Dashboards\\Bindings",
+    "file": "\/home\/kevin\/projects\/php\/lavacharts-api\/..\/lavacharts\/src\/Dashboards\/Bindings\/OneToOne.php",
+    "relative_file": null,
+    "hash": "16347e11ae3dbebcd978096fa66ed5333be07445",
+    "parent": "Khill\\Lavacharts\\Dashboards\\Bindings\\Binding",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Utils": "Khill\\Lavacharts\\Utils",
+        "ChartWrapper": "Khill\\Lavacharts\\Dashboards\\ChartWrapper",
+        "ControlWrapper": "Khill\\Lavacharts\\Dashboards\\ControlWrapper",
+        "InvalidLabel": "Khill\\Lavacharts\\Exceptions\\InvalidLabel"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 40,
+            "short_desc": "Creates the new Binding.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Dashboards\\Bindings\\OneToOne",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [
+                "The \"chartWrap\" @param tag variable name is wrong (should be \"controlWrapper\")",
+                "The \"controlWrap\" @param tag variable name is wrong (should be \"chartWrapper\")"
+            ],
+            "parameters": {
+                "controlWrapper": {
+                    "name": "controlWrapper",
+                    "line": 40,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Khill\\Lavacharts\\Dashboards\\Bindings\\Khill\\Lavacharts\\Dashboards\\ControlWrapper",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Khill\\Lavacharts\\Dashboards\\ControlWrapper",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "chartWrapper": {
+                    "name": "chartWrapper",
+                    "line": 40,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Khill\\Lavacharts\\Dashboards\\Bindings\\Khill\\Lavacharts\\Dashboards\\ChartWrapper",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Khill\\Lavacharts\\Dashboards\\ChartWrapper",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": {
+        "TYPE": {
+            "name": "TYPE",
+            "line": 31,
+            "short_desc": "Type of binding.",
+            "long_desc": ""
+        }
+    }
+}

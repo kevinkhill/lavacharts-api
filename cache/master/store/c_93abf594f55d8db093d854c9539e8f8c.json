@@ -1,0 +1,678 @@
+{
+    "name": "Khill\\Lavacharts\\Charts\\GaugeChart",
+    "line": 24,
+    "short_desc": "GaugeChart Class",
+    "long_desc": "A gauge with a dial, rendered within the browser using SVG or VML.",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Lavacharts"
+            ]
+        ],
+        "subpackage": [
+            [
+                "Charts"
+            ]
+        ],
+        "since": [
+            [
+                "2.2.0"
+            ]
+        ],
+        "author": [
+            [
+                "Kevin",
+                "Hill",
+                "<kevinkhill@gmail.com>"
+            ]
+        ],
+        "copyright": [
+            [
+                "(c)",
+                "2015,",
+                "KHill",
+                "Designs"
+            ]
+        ],
+        "link": [
+            [
+                "http:\/\/github.com\/kevinkhill\/lavacharts",
+                "GitHub",
+                "Repository",
+                "Page"
+            ],
+            [
+                "http:\/\/lavacharts.com",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Official",
+                "Docs",
+                "Site"
+            ]
+        ],
+        "license": [
+            [
+                "http:\/\/opensource.org\/licenses\/MIT",
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Khill\\Lavacharts\\Charts",
+    "file": "\/home\/kevin\/projects\/php\/lavacharts-api\/..\/lavacharts\/src\/Charts\/GaugeChart.php",
+    "relative_file": null,
+    "hash": "27d61835a808b871f2e2f9a18b1de85f1226e1a4",
+    "parent": "Khill\\Lavacharts\\Charts\\Chart",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Utils": "Khill\\Lavacharts\\Utils",
+        "Label": "Khill\\Lavacharts\\Values\\Label",
+        "DataTable": "Khill\\Lavacharts\\DataTables\\DataTable"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 61,
+            "short_desc": "Builds a new chart with the given label.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Charts\\GaugeChart",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "chartLabel": {
+                    "name": "chartLabel",
+                    "line": 61,
+                    "short_desc": "Identifying label for the chart.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Khill\\Lavacharts\\Charts\\Khill\\Lavacharts\\Values\\Label",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Khill\\Lavacharts\\Values\\Label",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "datatable": {
+                    "name": "datatable",
+                    "line": 61,
+                    "short_desc": "DataTable used for the chart.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Khill\\Lavacharts\\Charts\\Khill\\Lavacharts\\DataTables\\DataTable",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Khill\\Lavacharts\\DataTables\\DataTable",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "forceIFrame": {
+            "name": "forceIFrame",
+            "line": 90,
+            "short_desc": "Draws the chart inside an inline frame.",
+            "long_desc": "Note that on IE8, this option is ignored; all IE8 charts are drawn in i-frames.",
+            "hint": [
+                [
+                    "\\Khill\\Lavacharts\\Charts\\GaugeChart",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "iframe": {
+                    "name": "iframe",
+                    "line": 90,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "greenColor": {
+            "name": "greenColor",
+            "line": 108,
+            "short_desc": "The color to use for the green section, in HTML color notation.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Khill\\Lavacharts\\Charts\\GaugeChart",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "greenColor": {
+                    "name": "greenColor",
+                    "line": 108,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "greenFrom": {
+            "name": "greenFrom",
+            "line": 126,
+            "short_desc": "The lowest value for a range marked by a green color.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Khill\\Lavacharts\\Charts\\GaugeChart",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "greenFrom": {
+                    "name": "greenFrom",
+                    "line": 126,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "greenTo": {
+            "name": "greenTo",
+            "line": 144,
+            "short_desc": "The highest value for a range marked by a green color.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Khill\\Lavacharts\\Charts\\GaugeChart",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "greenTo": {
+                    "name": "greenTo",
+                    "line": 144,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "majorTicks": {
+            "name": "majorTicks",
+            "line": 163,
+            "short_desc": "Labels for major tick marks. The number of labels define the number of major ticks in all gauges.",
+            "long_desc": "The default is five major ticks, with the labels of the minimal and maximal gauge value.",
+            "hint": [
+                [
+                    "\\Khill\\Lavacharts\\Charts\\GaugeChart",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "majorTicks": {
+                    "name": "majorTicks",
+                    "line": 163,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "max": {
+            "name": "max",
+            "line": 181,
+            "short_desc": "The maximal value of a gauge.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Khill\\Lavacharts\\Charts\\GaugeChart",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "max": {
+                    "name": "max",
+                    "line": 181,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "min": {
+            "name": "min",
+            "line": 199,
+            "short_desc": "The minimal value of a gauge.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Khill\\Lavacharts\\Charts\\GaugeChart",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "min": {
+                    "name": "min",
+                    "line": 199,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "minorTicks": {
+            "name": "minorTicks",
+            "line": 217,
+            "short_desc": "The number of minor tick section in each major tick section.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Khill\\Lavacharts\\Charts\\GaugeChart",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "minorTicks": {
+                    "name": "minorTicks",
+                    "line": 217,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "redColor": {
+            "name": "redColor",
+            "line": 235,
+            "short_desc": "The color to use for the red section, in HTML color notation.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Khill\\Lavacharts\\Charts\\GaugeChart",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "redColor": {
+                    "name": "redColor",
+                    "line": 235,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "redFrom": {
+            "name": "redFrom",
+            "line": 253,
+            "short_desc": "The lowest value for a range marked by a red color.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Khill\\Lavacharts\\Charts\\GaugeChart",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "redFrom": {
+                    "name": "redFrom",
+                    "line": 253,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "redTo": {
+            "name": "redTo",
+            "line": 271,
+            "short_desc": "The highest value for a range marked by a red color.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Khill\\Lavacharts\\Charts\\GaugeChart",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "redTo": {
+                    "name": "redTo",
+                    "line": 271,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "yellowColor": {
+            "name": "yellowColor",
+            "line": 289,
+            "short_desc": "The color to use for the yellow section, in HTML color notation.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Khill\\Lavacharts\\Charts\\GaugeChart",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "yellowColor": {
+                    "name": "yellowColor",
+                    "line": 289,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "yellowFrom": {
+            "name": "yellowFrom",
+            "line": 307,
+            "short_desc": "The lowest value for a range marked by a yellow color.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Khill\\Lavacharts\\Charts\\GaugeChart",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "yellowFrom": {
+                    "name": "yellowFrom",
+                    "line": 307,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "yellowTo": {
+            "name": "yellowTo",
+            "line": 325,
+            "short_desc": "The highest value for a range marked by a yellow color.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Khill\\Lavacharts\\Charts\\GaugeChart",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "yellowTo": {
+                    "name": "yellowTo",
+                    "line": 325,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": {
+        "TYPE": {
+            "name": "TYPE",
+            "line": 31,
+            "short_desc": "Javascript chart type.",
+            "long_desc": ""
+        },
+        "VERSION": {
+            "name": "VERSION",
+            "line": 38,
+            "short_desc": "Javascript chart version.",
+            "long_desc": ""
+        },
+        "VIZ_PACKAGE": {
+            "name": "VIZ_PACKAGE",
+            "line": 45,
+            "short_desc": "Javascript chart package.",
+            "long_desc": ""
+        },
+        "VIZ_CLASS": {
+            "name": "VIZ_CLASS",
+            "line": 52,
+            "short_desc": "Google's visualization class name.",
+            "long_desc": ""
+        }
+    }
+}

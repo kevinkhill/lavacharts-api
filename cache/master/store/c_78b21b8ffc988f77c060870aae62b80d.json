@@ -1,0 +1,193 @@
+{
+    "name": "Khill\\Lavacharts\\Dashboards\\ChartWrapper",
+    "line": 22,
+    "short_desc": "ChartWrapper Class",
+    "long_desc": "Used for wrapping charts to use in dashboards.",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Lavacharts"
+            ]
+        ],
+        "subpackage": [
+            [
+                "Dashboards"
+            ]
+        ],
+        "since": [
+            [
+                "3.0.0"
+            ]
+        ],
+        "author": [
+            [
+                "Kevin",
+                "Hill",
+                "<kevinkhill@gmail.com>"
+            ]
+        ],
+        "copyright": [
+            [
+                "(c)",
+                "2015,",
+                "KHill",
+                "Designs"
+            ]
+        ],
+        "link": [
+            [
+                "http:\/\/github.com\/kevinkhill\/lavacharts",
+                "GitHub",
+                "Repository",
+                "Page"
+            ],
+            [
+                "http:\/\/lavacharts.com",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "Official",
+                "Docs",
+                "Site"
+            ]
+        ],
+        "license": [
+            [
+                "http:\/\/opensource.org\/licenses\/MIT",
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Khill\\Lavacharts\\Dashboards",
+    "file": "\/home\/kevin\/projects\/php\/lavacharts-api\/..\/lavacharts\/src\/Dashboards\/ChartWrapper.php",
+    "relative_file": null,
+    "hash": "b9eaa714d2db4686915d1f28ea76c86c3f963b11",
+    "parent": "Khill\\Lavacharts\\Dashboards\\Wrapper",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "ElementId": "Khill\\Lavacharts\\Values\\ElementId",
+        "Chart": "Khill\\Lavacharts\\Charts\\Chart"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 45,
+            "short_desc": "Builds a new Wrapper object.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Khill\\Lavacharts\\Dashboards\\ChartWrapper",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "chart": {
+                    "name": "chart",
+                    "line": 45,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Khill\\Lavacharts\\Dashboards\\Khill\\Lavacharts\\Charts\\Chart",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Khill\\Lavacharts\\Charts\\Chart",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "containerId": {
+                    "name": "containerId",
+                    "line": 45,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Khill\\Lavacharts\\Dashboards\\Khill\\Lavacharts\\Values\\ElementId",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Khill\\Lavacharts\\Values\\ElementId",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getChart": {
+            "name": "getChart",
+            "line": 58,
+            "short_desc": "Returns the wrapped chart.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Khill\\Lavacharts\\Charts\\Chart",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "jsonSerialize": {
+            "name": "jsonSerialize",
+            "line": 68,
+            "short_desc": "Custom serialization of the ChartWrapper.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": {
+        "VIZ_CLASS": {
+            "name": "VIZ_CLASS",
+            "line": 29,
+            "short_desc": "Javascript chart class.",
+            "long_desc": ""
+        }
+    }
+}
