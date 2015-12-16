@@ -15,8 +15,8 @@ $iterator = Finder::create()
     ->in($dir);
 
 $versions = GitVersionCollection::create($dir)
-    ->add('2.5', '2.5 branch')
-    ->add('3.0', 'v3.0 branch');
+    ->add('2.5', '2.5.x Series')
+    ->add('3.0', '3.0.x Series');
 
 $options = [
     'theme'                => 'lava',

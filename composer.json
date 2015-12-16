@@ -1,0 +1,14 @@
+{
+    "name": "khill/lavacharts-api",
+    "description": "Lavacharts API Documentation",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kevin Hill",
+            "email": "kevinkhill@gmail.com"
+        }
+    ],
+    "require": {
+        "sami/sami": "^3.1"
+    }
+}
