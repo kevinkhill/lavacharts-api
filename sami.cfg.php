@@ -5,7 +5,7 @@ use Sami\RemoteRepository\GitHubRemoteRepository;
 use Sami\Version\GitVersionCollection;
 use Symfony\Component\Finder\Finder;
 
-$dir = __DIR__.'/../lavacharts/src';
+$dir = realpath(__DIR__.'/../lavacharts/src');
 
 $iterator = Finder::create()
     ->files()
@@ -15,8 +15,8 @@ $iterator = Finder::create()
     ->in($dir);
 
 $versions = GitVersionCollection::create($dir)
-    ->add('2.5', '2.5.x Series')
-    ->add('3.0', '3.0.x Series');
+    ->add('2.5', '2.5.x Branch')
+    ->add('3.0', '3.0.x Branch');
 
 $options = [
     'theme'                => 'lava',
@@ -24,7 +24,7 @@ $options = [
     'title'                => 'Lavacharts API',
     'build_dir'            => __DIR__.'/build/%version%',
     'cache_dir'            => __DIR__.'/cache/%version%',
-    'remote_repository'    => new GitHubRemoteRepository('khill/lavacharts', dirname($dir)),
+    //'remote_repository'    => new GitHubRemoteRepository('khill/lavacharts', dirname($dir)),
     'default_opened_level' => 2,
 ];
 

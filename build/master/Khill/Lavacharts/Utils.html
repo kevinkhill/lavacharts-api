@@ -80,7 +80,7 @@
     </div>
 
     <p>    class
-    <strong>Utils</strong>
+    <strong>Utils</strong>        (<a href="https://github.com/khill/lavacharts/blob/master/src/Utils.php">View source</a>)
 </p>
 
     
@@ -90,18 +90,6 @@
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
-                    <div class="row">
-                <div class="col-md-2 type">
-                    static&nbsp;
-    bool
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method___callStatic">__callStatic</a>(
-    string $function, 
-    object $configObject)
-                                            <p>Magic method as an alias to is_a($object, $type)</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     static&nbsp;
@@ -128,7 +116,7 @@ brackets and separated by a pipe.</p>                </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     static&nbsp;
-    bool
+    boolean
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_arrayValuesCheck">arrayValuesCheck</a>(
@@ -156,9 +144,9 @@ brackets and separated by a pipe.</p>                </div>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_between">between</a>(
-    mixed $lower, 
-    mixed $test, 
-    mixed $upper, 
+    int|float $lower, 
+    int|float $test, 
+    int|float $upper, 
     bool $includeLimits = true)
                                             <p>Test if a number is between two other numbers.</p>                </div>
                 <div class="col-md-2"></div>
@@ -193,58 +181,8 @@ brackets and separated by a pipe.</p>                </div>
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___callStatic">
-        <div class="location">at line 13</div>
-        <code>        static            
-    bool
-    <strong>__callStatic</strong>(
-    string $function, 
-    object $configObject)</code>
-    </h3>
-    <div class="details">
-                    <div class="method-description">
-                                    <p>Magic method as an alias to is_a($object, $type)</p>                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>
-    string</td>
-                <td>$function</td>
-                <td>
-</td>
-            </tr>
-                    <tr>
-                <td>
-    object</td>
-                <td>$configObject</td>
-                <td>
-</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>
-    bool</td>
-            <td>
-</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_arrayToPipedString">
-        <div class="location">at line 38</div>
+        <div class="location">at line 14</div>
         <code>        static            
     string
     <strong>arrayToPipedString</strong>(
@@ -285,7 +223,7 @@ brackets and separated by a pipe.</p>                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_arrayIsMulti">
-        <div class="location">at line 63</div>
+        <div class="location">at line 32</div>
         <code>        static            
     bool
     <strong>arrayIsMulti</strong>(
@@ -326,9 +264,9 @@ brackets and separated by a pipe.</p>                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_arrayValuesCheck">
-        <div class="location">at line 85</div>
+        <div class="location">at line 53</div>
         <code>        static            
-    bool
+    boolean
     <strong>arrayValuesCheck</strong>(
     array $array, 
     string $type, 
@@ -367,7 +305,7 @@ brackets and separated by a pipe.</p>                                </div>
                     <table class="table table-condensed">
         <tr>
             <td>
-    bool</td>
+    boolean</td>
             <td>Returns true is all values match type, otherwise false.</td>
         </tr>
     </table>
@@ -380,7 +318,7 @@ brackets and separated by a pipe.</p>                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_isIntOrPercent">
-        <div class="location">at line 134</div>
+        <div class="location">at line 101</div>
         <code>        static            
     bool
     <strong>isIntOrPercent</strong>(
@@ -421,13 +359,13 @@ Valid percent = 32% or 100%</p>            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_between">
-        <div class="location">at line 173</div>
+        <div class="location">at line 139</div>
         <code>        static            
     bool
     <strong>between</strong>(
-    mixed $lower, 
-    mixed $test, 
-    mixed $upper, 
+    int|float $lower, 
+    int|float $test, 
+    int|float $upper, 
     bool $includeLimits = true)</code>
     </h3>
     <div class="details">
@@ -441,27 +379,27 @@ the limits with &lt; &amp; ></p>            </div>
                     <table class="table table-condensed">
                     <tr>
                 <td>
-    mixed</td>
+    int|float</td>
                 <td>$lower</td>
-                <td>number to test</td>
+                <td>The lower limit</td>
             </tr>
                     <tr>
                 <td>
-    mixed</td>
+    int|float</td>
                 <td>$test</td>
-                <td>lower limit</td>
+                <td>The number to test</td>
             </tr>
                     <tr>
                 <td>
-    mixed</td>
+    int|float</td>
                 <td>$upper</td>
-                <td>upper limit</td>
+                <td>The upper limit</td>
             </tr>
                     <tr>
                 <td>
     bool</td>
                 <td>$includeLimits</td>
-                <td>whether to include limits</td>
+                <td>Set whether to include limits</td>
             </tr>
             </table>
 
@@ -485,7 +423,7 @@ the limits with &lt; &amp; ></p>            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_nonEmptyString">
-        <div class="location">at line 197</div>
+        <div class="location">at line 162</div>
         <code>        static            
     bool
     <strong>nonEmptyString</strong>(
@@ -527,7 +465,7 @@ the limits with &lt; &amp; ></p>            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_nonEmptyStringInArray">
-        <div class="location">at line 214</div>
+        <div class="location">at line 178</div>
         <code>        static            
     bool
     <strong>nonEmptyStringInArray</strong>(

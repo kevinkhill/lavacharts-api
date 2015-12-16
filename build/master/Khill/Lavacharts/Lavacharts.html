@@ -80,35 +80,14 @@
     </div>
 
     <p>    class
-    <strong>Lavacharts</strong>
+    <strong>Lavacharts</strong>        (<a href="https://github.com/khill/lavacharts/blob/master/src/Lavacharts.php">View source</a>)
 </p>
 
+            <div class="description">
+            <p>Lavacharts - A PHP wrapper library for the Google Chart API</p>                    </div>
     
     
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_volcano">
-                                                                                
-    <a href="../../Khill/Lavacharts/Volcano.html"><abbr title="Khill\Lavacharts\Volcano">Volcano</abbr></a>
-                </td>
-                <td>$volcano</td>
-                <td class="last">Holds all of the defined Charts and DataTables.</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_jsFactory">
-                                                                                
-    <a href="../../Khill/Lavacharts/JavascriptFactory.html"><abbr title="Khill\Lavacharts\JavascriptFactory">JavascriptFactory</abbr></a>
-                </td>
-                <td>$jsFactory</td>
-                <td class="last">Javascript factory class for lava.js and chart js</td>
-                <td></td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
@@ -116,7 +95,7 @@
                     <div class="row">
                 <div class="col-md-2 type">
                     
-    
+    <a href="../../Khill/Lavacharts/Lavacharts.html"><abbr title="Khill\Lavacharts\Lavacharts">Lavacharts</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method___construct">__construct</a>()
@@ -130,9 +109,55 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method___call">__call</a>(
-    string $member, 
+    string $method, 
     array $arguments)
                                             <p>Magic function to reduce repetitive coding and create aliases.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../Khill/Lavacharts/DataTables/DataTable.html"><abbr title="Khill\Lavacharts\DataTables\DataTable">DataTable</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DataTable">DataTable</a>(
+    string $timezone = null)
+                                            <p>Create a new DataTable</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../Khill/Lavacharts/DataTables/DataTable.html"><abbr title="Khill\Lavacharts\DataTables\DataTable">DataTable</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_Dashboard">Dashboard</a>(
+    string $label)
+                                            <p>Create a new Dashboard</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../Khill/Lavacharts/Dashboards/ControlWrapper.html"><abbr title="Khill\Lavacharts\Dashboards\ControlWrapper">ControlWrapper</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ControlWrapper">ControlWrapper</a>(
+    <abbr title="Khill\Lavacharts\Khill\Lavacharts\Dashboards\Filters\Filter">Filter</abbr> $filter, 
+    string $elementId)
+                                            <p>Create a new ControlWrapper from a Filter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../Khill/Lavacharts/Dashboards/ChartWrapper.html"><abbr title="Khill\Lavacharts\Dashboards\ChartWrapper">ChartWrapper</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ChartWrapper">ChartWrapper</a>(
+    <abbr title="Khill\Lavacharts\Khill\Lavacharts\Charts\Chart">Chart</abbr> $chart, 
+    string $elementId)
+                                            <p>Create a new ChartWrapper from a Chart</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -142,11 +167,11 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_render">render</a>(
-    string $chartType, 
-    string $chartLabel, 
+    string $type, 
+    string $label, 
     string $elementId, 
     mixed $divDimensions = false)
-                                            <p>Renders the chart into the page</p>                </div>
+                                            <p>Renders Charts or Dashboards into the page</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -162,11 +187,36 @@
                     <div class="row">
                 <div class="col-md-2 type">
                     
-    string
+    boolean
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_exists">exists</a>($type, $label)
-                                            <p>Checks to see if the given chart type and title exists in the volcano storage.</p>                </div>
+                    <a href="#method_exists">exists</a>(
+    string $type, 
+    string $label)
+                                            <p>Checks to see if the given chart or dashboard exists in the volcano storage.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fetch">fetch</a>(
+    string $type, 
+    string $label)
+                                            <p>Fetches an existing Chart or Dashboard from the volcano storage.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_store">store</a>(
+    <a href="../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>|<a href="../../Khill/Lavacharts/Dashboards/Dashboard.html"><abbr title="Khill\Lavacharts\Dashboards\Dashboard">Dashboard</abbr></a> $lavaObj)
+                                            <p>Stores a existing Chart or Dashboard into the volcano storage.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -177,9 +227,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 114</div>
+        <div class="location">at line 101</div>
         <code>                    
-    
+    <a href="../../Khill/Lavacharts/Lavacharts.html"><abbr title="Khill\Lavacharts\Lavacharts">Lavacharts</abbr></a>
     <strong>__construct</strong>()</code>
     </h3>
     <div class="details">
@@ -187,6 +237,17 @@
                                     <p>Creates Volcano &amp; Javascript Factory</p>                                </div>
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../Khill/Lavacharts/Lavacharts.html"><abbr title="Khill\Lavacharts\Lavacharts">Lavacharts</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -195,11 +256,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___call">
-        <div class="location">at line 141</div>
+        <div class="location">at line 128</div>
         <code>                    
     mixed
     <strong>__call</strong>(
-    string $member, 
+    string $method, 
     array $arguments)</code>
     </h3>
     <div class="details">
@@ -212,7 +273,7 @@
                     <tr>
                 <td>
     string</td>
-                <td>$member</td>
+                <td>$method</td>
                 <td>Name of method</td>
             </tr>
                     <tr>
@@ -230,7 +291,7 @@
         <tr>
             <td>
     mixed</td>
-            <td>Returns Charts, DataTables, and Config Objects</td>
+            <td>Returns Charts, DataTables, and Config Objects, Events, Filters</td>
         </tr>
     </table>
 
@@ -239,12 +300,22 @@
 
                     <table class="table table-condensed">
                     <tr>
+                <td><a href="../../Khill/Lavacharts/Exceptions/InvalidLabel.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidLabel">InvalidLabel</abbr></a></td>
+                <td>
+</td>
+            </tr>
+                    <tr>
                 <td><a href="../../Khill/Lavacharts/Exceptions/InvalidLavaObject.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidLavaObject">InvalidLavaObject</abbr></a></td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td><a href="../../Khill/Lavacharts/Exceptions/InvalidChartLabel.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidChartLabel">InvalidChartLabel</abbr></a></td>
+                <td><a href="../../Khill/Lavacharts/Exceptions/InvalidFilterObject.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidFilterObject">InvalidFilterObject</abbr></a></td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Khill/Lavacharts/Exceptions/InvalidFunctionParam.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidFunctionParam">InvalidFunctionParam</abbr></a></td>
                 <td>
 </td>
             </tr>
@@ -256,20 +327,17 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_render">
-        <div class="location">at line 222</div>
+                    <h3 id="method_DataTable">
+        <div class="location">at line 169</div>
         <code>                    
-    string
-    <strong>render</strong>(
-    string $chartType, 
-    string $chartLabel, 
-    string $elementId, 
-    mixed $divDimensions = false)</code>
+    <a href="../../Khill/Lavacharts/DataTables/DataTable.html"><abbr title="Khill\Lavacharts\DataTables\DataTable">DataTable</abbr></a>
+    <strong>DataTable</strong>(
+    string $timezone = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>Renders the chart into the page</p>                    <p>Given a chart label and an HTML element id, this will output
-all of the necessary javascript to generate the chart.</p>            </div>
+                                    <p>Create a new DataTable</p>                    <p>If the additional DataTablePlus package is available, then one will
+be created, otherwise a standard DataTable is returned.</p>            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -277,20 +345,204 @@ all of the necessary javascript to generate the chart.</p>            </div>
                     <tr>
                 <td>
     string</td>
-                <td>$chartType</td>
-                <td>Type of chart to render.</td>
+                <td>$timezone</td>
+                <td>
+</td>
             </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../Khill/Lavacharts/DataTables/DataTable.html"><abbr title="Khill\Lavacharts\DataTables\DataTable">DataTable</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_Dashboard">
+        <div class="location">at line 191</div>
+        <code>                    
+    <a href="../../Khill/Lavacharts/DataTables/DataTable.html"><abbr title="Khill\Lavacharts\DataTables\DataTable">DataTable</abbr></a>
+    <strong>Dashboard</strong>(
+    string $label)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Create a new Dashboard</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
                     <tr>
                 <td>
     string</td>
-                <td>$chartLabel</td>
-                <td>Label of a saved chart.</td>
+                <td>$label</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../Khill/Lavacharts/DataTables/DataTable.html"><abbr title="Khill\Lavacharts\DataTables\DataTable">DataTable</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ControlWrapper">
+        <div class="location">at line 207</div>
+        <code>                    
+    <a href="../../Khill/Lavacharts/Dashboards/ControlWrapper.html"><abbr title="Khill\Lavacharts\Dashboards\ControlWrapper">ControlWrapper</abbr></a>
+    <strong>ControlWrapper</strong>(
+    <abbr title="Khill\Lavacharts\Khill\Lavacharts\Dashboards\Filters\Filter">Filter</abbr> $filter, 
+    string $elementId)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Create a new ControlWrapper from a Filter</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <abbr title="Khill\Lavacharts\Khill\Lavacharts\Dashboards\Filters\Filter">Filter</abbr></td>
+                <td>$filter</td>
+                <td>Filter to wrap</td>
             </tr>
                     <tr>
                 <td>
     string</td>
                 <td>$elementId</td>
-                <td>HTML element id to render the chart into.</td>
+                <td>HTML element ID to output the control.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../Khill/Lavacharts/Dashboards/ControlWrapper.html"><abbr title="Khill\Lavacharts\Dashboards\ControlWrapper">ControlWrapper</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ChartWrapper">
+        <div class="location">at line 223</div>
+        <code>                    
+    <a href="../../Khill/Lavacharts/Dashboards/ChartWrapper.html"><abbr title="Khill\Lavacharts\Dashboards\ChartWrapper">ChartWrapper</abbr></a>
+    <strong>ChartWrapper</strong>(
+    <abbr title="Khill\Lavacharts\Khill\Lavacharts\Charts\Chart">Chart</abbr> $chart, 
+    string $elementId)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Create a new ChartWrapper from a Chart</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <abbr title="Khill\Lavacharts\Khill\Lavacharts\Charts\Chart">Chart</abbr></td>
+                <td>$chart</td>
+                <td>Chart to wrap</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$elementId</td>
+                <td>HTML element ID to output the control.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../Khill/Lavacharts/Dashboards/ChartWrapper.html"><abbr title="Khill\Lavacharts\Dashboards\ChartWrapper">ChartWrapper</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_render">
+        <div class="location">at line 246</div>
+        <code>                    
+    string
+    <strong>render</strong>(
+    string $type, 
+    string $label, 
+    string $elementId, 
+    mixed $divDimensions = false)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Renders Charts or Dashboards into the page</p>                    <p>Given a type, label, and HTML element id, this will output
+all of the necessary javascript to generate the chart or dashboard.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$type</td>
+                <td>Type of object to render.</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$label</td>
+                <td>Label of the object to render.</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$elementId</td>
+                <td>HTML element id to render into.</td>
             </tr>
                     <tr>
                 <td>
@@ -320,7 +572,7 @@ all of the necessary javascript to generate the chart.</p>            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_jsapi">
-        <div class="location">at line 250</div>
+        <div class="location">at line 333</div>
         <code>                    
     string
     <strong>jsapi</strong>()</code>
@@ -336,6 +588,53 @@ all of the necessary javascript to generate the chart.</p>            </div>
         <tr>
             <td>
     string</td>
+            <td>Google Chart API and lava.js script blocks</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exists">
+        <div class="location">at line 348</div>
+        <code>                    
+    boolean
+    <strong>exists</strong>(
+    string $type, 
+    string $label)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Checks to see if the given chart or dashboard exists in the volcano storage.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$type</td>
+                <td>Type of object to check.</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$label</td>
+                <td>Label of the object to check.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    boolean</td>
             <td>
 </td>
         </tr>
@@ -348,30 +647,32 @@ all of the necessary javascript to generate the chart.</p>            </div>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_exists">
-        <div class="location">at line 265</div>
+                    <h3 id="method_fetch">
+        <div class="location">at line 369</div>
         <code>                    
-    string
-    <strong>exists</strong>($type, $label)</code>
+    mixed
+    <strong>fetch</strong>(
+    string $type, 
+    string $label)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>Checks to see if the given chart type and title exists in the volcano storage.</p>                                </div>
+                                    <p>Fetches an existing Chart or Dashboard from the volcano storage.</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
-                <td>$type</td>
                 <td>
-</td>
+    string</td>
+                <td>$type</td>
+                <td>Type of Chart or Dashboard.</td>
             </tr>
                     <tr>
-                <td></td>
-                <td>$label</td>
                 <td>
-</td>
+    string</td>
+                <td>$label</td>
+                <td>Label of the Chart or Dashboard.</td>
             </tr>
             </table>
 
@@ -381,7 +682,48 @@ all of the necessary javascript to generate the chart.</p>            </div>
                     <table class="table table-condensed">
         <tr>
             <td>
-    string</td>
+    mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_store">
+        <div class="location">at line 388</div>
+        <code>                    
+    boolean
+    <strong>store</strong>(
+    <a href="../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>|<a href="../../Khill/Lavacharts/Dashboards/Dashboard.html"><abbr title="Khill\Lavacharts\Dashboards\Dashboard">Dashboard</abbr></a> $lavaObj)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Stores a existing Chart or Dashboard into the volcano storage.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>|<a href="../../Khill/Lavacharts/Dashboards/Dashboard.html"><abbr title="Khill\Lavacharts\Dashboards\Dashboard">Dashboard</abbr></a></td>
+                <td>$lavaObj</td>
+                <td>Chart or Dashboard.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    boolean</td>
             <td>
 </td>
         </tr>

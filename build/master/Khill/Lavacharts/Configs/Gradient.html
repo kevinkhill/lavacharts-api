@@ -81,71 +81,27 @@
     </div>
 
     <p>    class
-    <strong>Gradient</strong>        extends <a href="../../../Khill/Lavacharts/Configs/ConfigObject.html"><abbr title="Khill\Lavacharts\Configs\ConfigObject">ConfigObject</abbr></a>
+    <strong>Gradient</strong>        extends <a href="../../../Khill/Lavacharts/JsonConfig.html"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a>        (<a href="https://github.com/khill/lavacharts/blob/master/src/Configs/Gradient.php">View source</a>)
 </p>
 
+            <div class="description">
+            <p>Gradient ConfigObject</p>            <p>An object that specifies a color gradient</p>        </div>
     
     
-    
-            <h2>Properties</h2>
+            <h2>Constants</h2>
 
             <table class="table table-condensed">
                     <tr>
-                <td class="type" id="property_color1">
-                                                                                
-    int
+                <td>TYPE</td>
+                <td class="last">
+                    <p><em>Type of JsonConfig object</em></p>
+                    <p>
+</p>
                 </td>
-                <td>$color1</td>
-                <td class="last">Start color for gradient.</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_color2">
-                                                                                
-    int
-                </td>
-                <td>$color2</td>
-                <td class="last">Finish color for gradient.</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_x1">
-                                                                                
-    array
-                </td>
-                <td>$x1</td>
-                <td class="last">Where on the boundary to start in X.</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_y1">
-                                                                                
-    array
-                </td>
-                <td>$y1</td>
-                <td class="last">Where on the boundary to start in Y.</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_x2">
-                                                                                
-    array
-                </td>
-                <td>$x2</td>
-                <td class="last">Where on the boundary to finish, relative to $x1.</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_y2">
-                                                                                
-    array
-                </td>
-                <td>$y2</td>
-                <td class="last">Where on the boundary to finish, relative to $y1.</td>
-                <td></td>
             </tr>
             </table>
 
+    
     
             <h2>Methods</h2>
 
@@ -153,7 +109,7 @@
                     <div class="row">
                 <div class="col-md-2 type">
                     
-    mixed
+    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method___construct">__construct</a>(
@@ -164,14 +120,51 @@
                     <div class="row">
                 <div class="col-md-2 type">
                     
-    array
+    mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_toArray">toArray</a>(
-    string $keyName = null)
-                                            <p>Returns an array representation of the object.</p>                </div>
+                    <a href="#method___get">__get</a>(
+    string $option)
+                                            <p>Get the value of a set option via magic method through UI.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;
-    <a href="../../../Khill/Lavacharts/Configs/ConfigObject.html#method_toArray"><abbr title="Khill\Lavacharts\Configs\ConfigObject">ConfigObject</abbr></a></small></div>
+    <a href="../../../Khill/Lavacharts/JsonConfig.html#method___get"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Khill/Lavacharts/Options.html"><abbr title="Khill\Lavacharts\Options">Options</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptions">getOptions</a>()
+                                            <p>Gets the Options object for the JsonConfig</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Khill/Lavacharts/JsonConfig.html#method_getOptions"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Khill/Lavacharts/JsonConfig.html"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOption">setOption</a>(
+    string $option, 
+    mixed $value)
+                                            <p>Shortcut method to set the value of an option and return $this.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Khill/Lavacharts/JsonConfig.html#method_setOption"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOptions">setOptions</a>(
+    array $config)
+                                            <p>Parses the config array by passing the values through each method to check
+validity against if the option exists.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Khill/Lavacharts/JsonConfig.html#method_setOptions"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -179,10 +172,10 @@
     array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getValues">getValues</a>()
-                                            <p>Same as toArray, but without the class name as a key to being multi-dimension.</p>                </div>
+                    <a href="#method_jsonSerialize">jsonSerialize</a>()
+                                            <p>Custom serialization of the JsonConfig object.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;
-    <a href="../../../Khill/Lavacharts/Configs/ConfigObject.html#method_getValues"><abbr title="Khill\Lavacharts\Configs\ConfigObject">ConfigObject</abbr></a></small></div>
+    <a href="../../../Khill/Lavacharts/JsonConfig.html#method_jsonSerialize"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -258,9 +251,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 72</div>
+        <div class="location">at line 53</div>
         <code>                    
-    mixed
+    
     <strong>__construct</strong>(
     array $config = array())</code>
     </h3>
@@ -275,7 +268,54 @@
                 <td>
     array</td>
                 <td>$config</td>
-                <td>Array of options.</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigValue.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigValue">InvalidConfigValue</abbr></a></td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigProperty.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigProperty">InvalidConfigProperty</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___get">
+        <div class="location">in 
+    <a href="../../../Khill/Lavacharts/JsonConfig.html#method___get"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a> at line 64</div>
+        <code>                    
+    mixed
+    <strong>__get</strong>(
+    string $option)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get the value of a set option via magic method through UI.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$option</td>
+                <td>Name of option.</td>
             </tr>
             </table>
 
@@ -296,12 +336,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigValue.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigValue">InvalidConfigValue</abbr></a></td>
-                <td>
-</td>
-            </tr>
-                    <tr>
-                <td><abbr title="Khill\Lavacharts\Configs\InvalidConfigProperty">InvalidConfigProperty</abbr></td>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigProperty.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigProperty">InvalidConfigProperty</abbr></a></td>
                 <td>
 </td>
             </tr>
@@ -313,40 +348,26 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_toArray">
+                    <h3 id="method_getOptions">
         <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Configs/ConfigObject.html#method_toArray"><abbr title="Khill\Lavacharts\Configs\ConfigObject">ConfigObject</abbr></a> at line 93</div>
+    <a href="../../../Khill/Lavacharts/JsonConfig.html#method_getOptions"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a> at line 75</div>
         <code>                    
-    array
-    <strong>toArray</strong>(
-    string $keyName = null)</code>
+    <a href="../../../Khill/Lavacharts/Options.html"><abbr title="Khill\Lavacharts\Options">Options</abbr></a>
+    <strong>getOptions</strong>()</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>Returns an array representation of the object.</p>                    <p>If passed a label, then the array will be returned with the label as the
-key.</p>
-
-<p>Called with no label returns an array with the classname as the key.</p>            </div>
+                                    <p>Gets the Options object for the JsonConfig</p>                                </div>
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>
-    string</td>
-                <td>$keyName</td>
-                <td>Key name to be applied to generated array.</td>
-            </tr>
-            </table>
-
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
             <td>
-    array</td>
-            <td>Assoc. array of the options of the object.</td>
+    <a href="../../../Khill/Lavacharts/Options.html"><abbr title="Khill\Lavacharts\Options">Options</abbr></a></td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -357,16 +378,113 @@ key.</p>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getValues">
+                    <h3 id="method_setOption">
         <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Configs/ConfigObject.html#method_getValues"><abbr title="Khill\Lavacharts\Configs\ConfigObject">ConfigObject</abbr></a> at line 115</div>
+    <a href="../../../Khill/Lavacharts/JsonConfig.html#method_setOption"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a> at line 90</div>
         <code>                    
-    array
-    <strong>getValues</strong>()</code>
+    <a href="../../../Khill/Lavacharts/JsonConfig.html"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a>
+    <strong>setOption</strong>(
+    string $option, 
+    mixed $value)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>Same as toArray, but without the class name as a key to being multi-dimension.</p>                                </div>
+                                    <p>Shortcut method to set the value of an option and return $this.</p>                    <p>In order to maintain backwards compatibility, ConfigObjects will be unwrapped.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$option</td>
+                <td>Option to set.</td>
+            </tr>
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value of the option.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Khill/Lavacharts/JsonConfig.html"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOptions">
+        <div class="location">in 
+    <a href="../../../Khill/Lavacharts/JsonConfig.html#method_setOptions"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a> at line 106</div>
+        <code>                    
+    
+    <strong>setOptions</strong>(
+    array $config)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Parses the config array by passing the values through each method to check
+validity against if the option exists.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    array</td>
+                <td>$config</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigValue.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigValue">InvalidConfigValue</abbr></a></td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigProperty.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigProperty">InvalidConfigProperty</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_jsonSerialize">
+        <div class="location">in 
+    <a href="../../../Khill/Lavacharts/JsonConfig.html#method_jsonSerialize"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a> at line 275</div>
+        <code>                    
+    array
+    <strong>jsonSerialize</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Custom serialization of the JsonConfig object.</p>                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -375,7 +493,8 @@ key.</p>
         <tr>
             <td>
     array</td>
-            <td>Array of the options of the object.</td>
+            <td>
+</td>
         </tr>
     </table>
 
@@ -387,7 +506,7 @@ key.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_color1">
-        <div class="location">at line 83</div>
+        <div class="location">at line 67</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Configs/Gradient.html"><abbr title="Khill\Lavacharts\Configs\Gradient">Gradient</abbr></a>
     <strong>color1</strong>(
@@ -422,6 +541,16 @@ key.</p>
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigValue.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigValue">InvalidConfigValue</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -429,7 +558,7 @@ key.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_color2">
-        <div class="location">at line 103</div>
+        <div class="location">at line 79</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Configs/Gradient.html"><abbr title="Khill\Lavacharts\Configs\Gradient">Gradient</abbr></a>
     <strong>color2</strong>(
@@ -464,6 +593,16 @@ key.</p>
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigValue.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigValue">InvalidConfigValue</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -471,7 +610,7 @@ key.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_x1">
-        <div class="location">at line 123</div>
+        <div class="location">at line 91</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Configs/Gradient.html"><abbr title="Khill\Lavacharts\Configs\Gradient">Gradient</abbr></a>
     <strong>x1</strong>(
@@ -506,6 +645,16 @@ key.</p>
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigValue.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigValue">InvalidConfigValue</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -513,7 +662,7 @@ key.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_y1">
-        <div class="location">at line 143</div>
+        <div class="location">at line 103</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Configs/Gradient.html"><abbr title="Khill\Lavacharts\Configs\Gradient">Gradient</abbr></a>
     <strong>y1</strong>(
@@ -548,6 +697,16 @@ key.</p>
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigValue.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigValue">InvalidConfigValue</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -555,7 +714,7 @@ key.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_x2">
-        <div class="location">at line 163</div>
+        <div class="location">at line 115</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Configs/Gradient.html"><abbr title="Khill\Lavacharts\Configs\Gradient">Gradient</abbr></a>
     <strong>x2</strong>(
@@ -590,6 +749,16 @@ key.</p>
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigValue.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigValue">InvalidConfigValue</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -597,7 +766,7 @@ key.</p>
             </div>
                     <div class="method-item">
                     <h3 id="method_y2">
-        <div class="location">at line 183</div>
+        <div class="location">at line 127</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Configs/Gradient.html"><abbr title="Khill\Lavacharts\Configs\Gradient">Gradient</abbr></a>
     <strong>y2</strong>(
@@ -632,6 +801,16 @@ key.</p>
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigValue.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigValue">InvalidConfigValue</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>

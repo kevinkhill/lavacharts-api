@@ -81,60 +81,67 @@
     </div>
 
     <p>    class
-    <strong>CalendarChart</strong>        extends <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
+    <strong>CalendarChart</strong>        extends <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>        (<a href="https://github.com/khill/lavacharts/blob/master/src/Charts/CalendarChart.php">View source</a>)
 </p>
 
+            <div class="description">
+            <p>CalendarChart Class</p>            <p>A calendar chart is a visualization used to show activity over the course of a long span of time,
+such as months or years. They're best used when you want to illustrate how some quantity varies
+depending on the day of the week, or how it trends over time.</p>        </div>
     
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Khill/Lavacharts/Traits/ColorAxisTrait.html"><abbr title="Khill\Lavacharts\Traits\ColorAxisTrait">Khill\Lavacharts\Traits\ColorAxisTrait</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    
+
+                </div>
+            </div>
+            </div>
     
-    
-            <h2>Properties</h2>
+            <h2>Constants</h2>
 
             <table class="table table-condensed">
                     <tr>
-                <td class="type" id="property_type">
-                                                                                
-    
-                </td>
-                <td>$type</td>
+                <td>TYPE</td>
                 <td class="last">
-</td>
-                <td></td>
+                    <p><em>Javascript chart type.</em></p>
+                    <p>
+</p>
+                </td>
             </tr>
                     <tr>
-                <td class="type" id="property_label">
-                                                                                
-    
-                </td>
-                <td>$label</td>
+                <td>VERSION</td>
                 <td class="last">
-</td>
-                <td><small>from&nbsp;
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#property_label"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></td>
+                    <p><em>Javascript chart version.</em></p>
+                    <p>
+</p>
+                </td>
             </tr>
                     <tr>
-                <td class="type" id="property_datatable">
-                                                                                
-    
-                </td>
-                <td>$datatable</td>
+                <td>VIZ_PACKAGE</td>
                 <td class="last">
-</td>
-                <td><small>from&nbsp;
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#property_datatable"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></td>
+                    <p><em>Javascript chart package.</em></p>
+                    <p>
+</p>
+                </td>
             </tr>
                     <tr>
-                <td class="type" id="property_deferedRender">
-                                                                                
-    
-                </td>
-                <td>$deferedRender</td>
+                <td>VIZ_CLASS</td>
                 <td class="last">
-</td>
-                <td><small>from&nbsp;
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#property_deferedRender"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></td>
+                    <p><em>Google's visualization class name.</em></p>
+                    <p>
+</p>
+                </td>
             </tr>
             </table>
 
+    
     
             <h2>Methods</h2>
 
@@ -146,32 +153,11 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method___construct">__construct</a>(
-    string $chartLabel)
-                                            <p>Builds a new chart with a label.</p>                </div>
+    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Values\Label">Label</abbr> $chartLabel, 
+    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\DataTables\DataTable">DataTable</abbr> $datatable, 
+    array $config = array())
+                                            <p>Builds a new chart with the given label.</p>                </div>
                 <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setOptions">setOptions</a>(
-    array $o)
-                                            <p>Sets configuration options from array of values</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_setOptions"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-    array
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getOptions">getOptions</a>()
-                                            <p>Gets the current chart options.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_getOptions"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -179,10 +165,69 @@
     mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getOption">getOption</a>(
-    string $o)
+                    <a href="#method___get">__get</a>(
+    string $option)
                                             <p>Overriding getOption function to pull config options from calendar array.</p>                </div>
                 <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Khill/Lavacharts/Options.html"><abbr title="Khill\Lavacharts\Options">Options</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptions">getOptions</a>()
+                                            <p>Gets the Options object for the JsonConfig</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Khill/Lavacharts/JsonConfig.html#method_getOptions"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Khill/Lavacharts/JsonConfig.html"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOption">setOption</a>(
+    string $option, 
+    mixed $value)
+                                            <p>Shortcut method to set the value of an option and return $this.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Khill/Lavacharts/JsonConfig.html#method_setOption"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOptions">setOptions</a>(
+    array $config)
+                                            <p>Parses the config array by passing the values through each method to check
+validity against if the option exists.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Khill/Lavacharts/JsonConfig.html#method_setOptions"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_jsonSerialize">jsonSerialize</a>()
+                                            <p>Custom serialization of the JsonConfig object.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Khill/Lavacharts/JsonConfig.html#method_jsonSerialize"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getType">getType</a>()
+                                            <p>Returns the chart type.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_getType"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -198,13 +243,59 @@
                     <div class="row">
                 <div class="col-md-2 type">
                     
-    bool
+    array
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getEvents">getEvents</a>()
-                                            <p>Checks if any events have been assigned to the chart.</p>                </div>
+                                            <p>Retrieves the events if any have been assigned to the chart.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;
     <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_getEvents"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Khill/Lavacharts/Values/Label.html"><abbr title="Khill\Lavacharts\Values\Label">Label</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLabel">getLabel</a>()
+                                            <p>Returns the chart label.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_getLabel"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_events">events</a>(
+    array $events)
+                                            <p>Register javascript callbacks for specific events.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_events"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_datatable">datatable</a>(
+    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\DataTables\DataTable">DataTable</abbr> $datatable)
+                                            <p>Assigns a datatable to use for the Chart.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_datatable"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Khill/Lavacharts/DataTables/DataTable.html"><abbr title="Khill\Lavacharts\DataTables\DataTable">DataTable</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDataTable">getDataTable</a>()
+                                            <p>Returns the DataTable</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_getDataTable"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -220,13 +311,36 @@
                     <div class="row">
                 <div class="col-md-2 type">
                     
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_render">render</a>(
+    string $elemId)
+                                            <p>Outputs the chart javascript into the page.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_render"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_animation">animation</a>(
+    array $animationConfig)
+                                            <p>Set the animation options for a chart.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_animation"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
     <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_backgroundColor">backgroundColor</a>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\BackgroundColor">BackgroundColor</abbr> $bc)
-                                            <p>The background color for the main area of the chart. Can be either a simple
-HTML color string, for example: 'red' or '#00cc00', or a backgroundColor object</p>                </div>
+    array $backgroundColorConfig)
+                                            <p>The background color for the main area of the chart.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;
     <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_backgroundColor"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
             </div>
@@ -237,7 +351,7 @@ HTML color string, for example: 'red' or '#00cc00', or a backgroundColor object<
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_chartArea">chartArea</a>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\ChartArea">ChartArea</abbr> $ca)
+    array $chartAreaConfig)
                                             <p>An object with members to configure the placement and size of the chart area
 (where the chart itself is drawn, excluding axis and legends).</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;
@@ -250,9 +364,8 @@ HTML color string, for example: 'red' or '#00cc00', or a backgroundColor object<
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_colors">colors</a>(
-    array $cArr)
-                                            <p>The colors to use for the chart elements. An array of strings, where each
-element is an HTML color string, for example: colors:['red','#004411'].</p>                </div>
+    array $colorArray)
+                                            <p>The colors to use for the chart elements.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;
     <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_colors"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
             </div>
@@ -262,46 +375,9 @@ element is an HTML color string, for example: colors:['red','#004411'].</p>     
     <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_datatable">datatable</a>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\DataTable">DataTable</abbr> $d)
-                                            <p>Assigns wich Datatable will be used for this Chart.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_datatable"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-    void
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_deferedRender">deferedRender</a>(
-    bool $dr)
-                                            <p>Set up the chart with no datatable to defer rendering via AJAX</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_deferedRender"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_events">events</a>(
-    array $e)
-                                            <p>Register javascript callbacks for specific events.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_events"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
-                </div>
-                <div class="col-md-8 type">
                     <a href="#method_fontSize">fontSize</a>(
-    int $fs)
-                                            <p>The default font size, in pixels, of all text in the chart. You can
-override this using properties for specific chart elements.</p>                </div>
+    integer $fontSize)
+                                            <p>The default font size, in pixels, of all text in the chart.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;
     <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_fontSize"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
             </div>
@@ -312,9 +388,8 @@ override this using properties for specific chart elements.</p>                <
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_fontName">fontName</a>(
-    string $fn)
-                                            <p>The default font face for all text in the chart. You can override this
-using properties for specific chart elements.</p>                </div>
+    string $fontName)
+                                            <p>The default font face for all text in the chart.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;
     <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_fontName"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
             </div>
@@ -325,7 +400,7 @@ using properties for specific chart elements.</p>                </div>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_height">height</a>(
-    int $h)
+    int $height)
                                             <p>Height of the chart, in pixels.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;
     <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_height"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
@@ -337,35 +412,10 @@ using properties for specific chart elements.</p>                </div>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_legend">legend</a>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Legend">Legend</abbr> $l)
-                                            <p>An object with members to configure various aspects of the legend. To
-specify properties of this object, create a new legend() object, set the
-values then pass it to this function or to the constructor.</p>                </div>
+    array $legendConfig)
+                                            <p>An object with members to configure various aspects of the legend.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;
     <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_legend"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-    string
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_optionsToJson">optionsToJson</a>()
-                                            <p>Returns a JSON string representation of the chart's properties.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_optionsToJson"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-    string
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_render">render</a>(
-    string $ei)
-                                            <p>Outputs the chart javascript into the page</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_render"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -374,7 +424,7 @@ values then pass it to this function or to the constructor.</p>                <
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_title">title</a>(
-    string $t)
+    string $title)
                                             <p>Text to display above the chart.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;
     <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_title"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
@@ -386,9 +436,8 @@ values then pass it to this function or to the constructor.</p>                <
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_titlePosition">titlePosition</a>(
-    string $tp)
-                                            <p>Where to place the chart title, compared to the chart area. Supported values:
-'in' - Draw the title inside the chart area.</p>                </div>
+    string $titlePosition)
+                                            <p>Where to place the chart title, compared to the chart area.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;
     <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_titlePosition"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
             </div>
@@ -399,9 +448,8 @@ values then pass it to this function or to the constructor.</p>                <
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_titleTextStyle">titleTextStyle</a>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\TextStyle">TextStyle</abbr> $ts)
-                                            <p>An object that specifies the title text style. create a new textStyle()
-object, set the values then pass it to this function or to the constructor.</p>                </div>
+    <a href="../../../Khill/Lavacharts/Configs/TextStyle.html"><abbr title="Khill\Lavacharts\Configs\TextStyle">TextStyle</abbr></a> $textStyle)
+                                            <p>An array of options for defining the title text style.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;
     <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_titleTextStyle"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
             </div>
@@ -412,10 +460,8 @@ object, set the values then pass it to this function or to the constructor.</p> 
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_tooltip">tooltip</a>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Tooltip">Tooltip</abbr> $t)
-                                            <p>An object with members to configure various tooltip elements. To specify
-properties of this object, create a new tooltip() object, set the values
-then pass it to this function or to the constructor.</p>                </div>
+    array $tooltip)
+                                            <p>An object with members to configure various tooltip elements.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;
     <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_tooltip"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
             </div>
@@ -426,10 +472,23 @@ then pass it to this function or to the constructor.</p>                </div>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_width">width</a>(
-    int $w)
+    int $width)
                                             <p>Width of the chart, in pixels.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;
     <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_width"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_colorAxis">colorAxis</a>(
+    array $colorAxisConfig)
+                                            <p>An object that specifies a mapping between color column values
+and colors or a gradient scale.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Khill/Lavacharts/Traits/ColorAxisTrait.html#method_colorAxis"><abbr title="Khill\Lavacharts\Traits\ColorAxisTrait">ColorAxisTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -438,7 +497,7 @@ then pass it to this function or to the constructor.</p>                </div>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_cellColor">cellColor</a>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr> $stroke)
+    array $strokeConfig)
                                             <p>The cellColor option lets you customize the border of the calendar day squares</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -449,7 +508,7 @@ then pass it to this function or to the constructor.</p>                </div>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_cellSize">cellSize</a>(
-    int $cellSize)
+    integer $cellSize)
                                             <p>Sets the size of the calendar day squares</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -460,7 +519,7 @@ then pass it to this function or to the constructor.</p>                </div>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_dayOfWeekLabel">dayOfWeekLabel</a>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\TextStyle">TextStyle</abbr> $label)
+    <a href="../../../Khill/Lavacharts/Configs/TextStyle.html"><abbr title="Khill\Lavacharts\Configs\TextStyle">TextStyle</abbr></a> $labelConfig)
                                             <p>Controls the font style of the week labels at the top of the chart.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -471,7 +530,7 @@ then pass it to this function or to the constructor.</p>                </div>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_dayOfWeekRightSpace">dayOfWeekRightSpace</a>(
-    int $space)
+    integer $space)
                                             <p>Sets The distance between the right edge of the week labels and
 the left edge of the chart day squares.</p>                </div>
                 <div class="col-md-2"></div>
@@ -494,7 +553,7 @@ the left edge of the chart day squares.</p>                </div>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_focusedCellColor">focusedCellColor</a>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr> $stroke)
+    <a href="../../../Khill/Lavacharts/Configs/Stroke.html"><abbr title="Khill\Lavacharts\Configs\Stroke">Stroke</abbr></a> $strokeConfig)
                                             <p>When the user focuses (say, by hovering) over a day square,
 calendar charts will highlight the square.</p>                </div>
                 <div class="col-md-2"></div>
@@ -506,7 +565,7 @@ calendar charts will highlight the square.</p>                </div>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_monthLabel">monthLabel</a>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\TextStyle">TextStyle</abbr> $label)
+    array $labelConfig)
                                             <p>Sets the style for the month labels.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -517,7 +576,7 @@ calendar charts will highlight the square.</p>                </div>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_monthOutlineColor">monthOutlineColor</a>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr> $stroke)
+    array $strokeConfig)
                                             <p>Months with data values are delineated from others using a border in this style.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -540,7 +599,7 @@ the top of the day squares.</p>                </div>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_underYearSpace">underYearSpace</a>(
-    int $space)
+    integer $space)
                                             <p>The number of pixels between the bottom-most year label and
 the bottom of the chart.</p>                </div>
                 <div class="col-md-2"></div>
@@ -552,19 +611,8 @@ the bottom of the chart.</p>                </div>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_unusedMonthOutlineColor">unusedMonthOutlineColor</a>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr> $stroke)
+    array $strokeConfig)
                                             <p>Months without data values are delineated from others using a border in this style.</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_colorAxis">colorAxis</a>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\ColorAxis">ColorAxis</abbr> $colorAxis)
-                                            <p>An object that specifies a mapping between color column values and colors or a gradient scale.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -585,7 +633,7 @@ the bottom of the chart.</p>                </div>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_noDataPattern">noDataPattern</a>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Color">Color</abbr> $color)
+    array $colorConfig)
                                             <p>An object that specifies a mapping between color column values and colors or a gradient scale.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -597,83 +645,49 @@ the bottom of the chart.</p>                </div>
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 31</div>
+        <div class="location">at line 106</div>
         <code>                    
     
     <strong>__construct</strong>(
-    string $chartLabel)</code>
+    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Values\Label">Label</abbr> $chartLabel, 
+    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\DataTables\DataTable">DataTable</abbr> $datatable, 
+    array $config = array())</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>Builds a new chart with a label.</p>                                </div>
+                                    <p>Builds a new chart with the given label.</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
                 <td>
-    string</td>
+    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Values\Label">Label</abbr></td>
                 <td>$chartLabel</td>
-                <td>Label for the chart accessed via the Volcano.</td>
+                <td>Identifying label for the chart.</td>
             </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_setOptions">
-        <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_setOptions"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 102</div>
-        <code>                    
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
-    <strong>setOptions</strong>(
-    array $o)</code>
-    </h3>
-    <div class="details">
-                    <div class="method-description">
-                                    <p>Sets configuration options from array of values</p>                    <p>You can set the options all at once instead of passing them individually
-or chaining the functions from the chart objects.</p>            </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\DataTables\DataTable">DataTable</abbr></td>
+                <td>$datatable</td>
+                <td>DataTable used for the chart.</td>
+            </tr>
                     <tr>
                 <td>
     array</td>
-                <td>$o</td>
+                <td>$config</td>
                 <td>
 </td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></td>
-            <td>
-</td>
-        </tr>
-    </table>
-
             
                             <h4>Exceptions</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigProperty.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigProperty">InvalidConfigProperty</abbr></a></td>
-                <td>
-</td>
-            </tr>
-                    <tr>
-                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigValue.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigValue">InvalidConfigValue</abbr></a></td>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidOption.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidOption">InvalidOption</abbr></a></td>
                 <td>
 </td>
             </tr>
@@ -685,42 +699,12 @@ or chaining the functions from the chart objects.</p>            </div>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getOptions">
-        <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_getOptions"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 130</div>
-        <code>                    
-    array
-    <strong>getOptions</strong>()</code>
-    </h3>
-    <div class="details">
-                    <div class="method-description">
-                                    <p>Gets the current chart options.</p>                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>
-    array</td>
-            <td>
-</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getOption">
-        <div class="location">at line 85</div>
+                    <h3 id="method___get">
+        <div class="location">at line 138</div>
         <code>                    
     mixed
-    <strong>getOption</strong>(
-    string $o)</code>
+    <strong>__get</strong>(
+    string $option)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -732,8 +716,8 @@ or chaining the functions from the chart objects.</p>            </div>
                     <tr>
                 <td>
     string</td>
-                <td>$o</td>
-                <td>Which option to fetch</td>
+                <td>$option</td>
+                <td>Name of option.</td>
             </tr>
             </table>
 
@@ -754,7 +738,7 @@ or chaining the functions from the chart objects.</p>            </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Khill\Lavacharts\Charts\InvalidConfigValue">InvalidConfigValue</abbr></td>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigValue.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigValue">InvalidConfigValue</abbr></a></td>
                 <td>
 </td>
             </tr>
@@ -766,9 +750,196 @@ or chaining the functions from the chart objects.</p>            </div>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getOptions">
+        <div class="location">in 
+    <a href="../../../Khill/Lavacharts/JsonConfig.html#method_getOptions"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a> at line 75</div>
+        <code>                    
+    <a href="../../../Khill/Lavacharts/Options.html"><abbr title="Khill\Lavacharts\Options">Options</abbr></a>
+    <strong>getOptions</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets the Options object for the JsonConfig</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Khill/Lavacharts/Options.html"><abbr title="Khill\Lavacharts\Options">Options</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOption">
+        <div class="location">in 
+    <a href="../../../Khill/Lavacharts/JsonConfig.html#method_setOption"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a> at line 90</div>
+        <code>                    
+    <a href="../../../Khill/Lavacharts/JsonConfig.html"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a>
+    <strong>setOption</strong>(
+    string $option, 
+    mixed $value)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Shortcut method to set the value of an option and return $this.</p>                    <p>In order to maintain backwards compatibility, ConfigObjects will be unwrapped.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$option</td>
+                <td>Option to set.</td>
+            </tr>
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value of the option.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Khill/Lavacharts/JsonConfig.html"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOptions">
+        <div class="location">in 
+    <a href="../../../Khill/Lavacharts/JsonConfig.html#method_setOptions"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a> at line 106</div>
+        <code>                    
+    
+    <strong>setOptions</strong>(
+    array $config)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Parses the config array by passing the values through each method to check
+validity against if the option exists.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    array</td>
+                <td>$config</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigValue.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigValue">InvalidConfigValue</abbr></a></td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigProperty.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigProperty">InvalidConfigProperty</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_jsonSerialize">
+        <div class="location">in 
+    <a href="../../../Khill/Lavacharts/JsonConfig.html#method_jsonSerialize"><abbr title="Khill\Lavacharts\JsonConfig">JsonConfig</abbr></a> at line 275</div>
+        <code>                    
+    array
+    <strong>jsonSerialize</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Custom serialization of the JsonConfig object.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getType">
+        <div class="location">in 
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_getType"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 108</div>
+        <code>                    
+    string
+    <strong>getType</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the chart type.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_hasEvents">
         <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_hasEvents"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 160</div>
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_hasEvents"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 119</div>
         <code>                    
     bool
     <strong>hasEvents</strong>()</code>
@@ -798,14 +969,14 @@ or chaining the functions from the chart objects.</p>            </div>
                     <div class="method-item">
                     <h3 id="method_getEvents">
         <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_getEvents"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 170</div>
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_getEvents"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 134</div>
         <code>                    
-    bool
+    array
     <strong>getEvents</strong>()</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>Checks if any events have been assigned to the chart.</p>                                </div>
+                                    <p>Retrieves the events if any have been assigned to the chart.</p>                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -813,7 +984,7 @@ or chaining the functions from the chart objects.</p>            </div>
                     <table class="table table-condensed">
         <tr>
             <td>
-    bool</td>
+    array</td>
             <td>
 </td>
         </tr>
@@ -826,16 +997,16 @@ or chaining the functions from the chart objects.</p>            </div>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getDataTableJson">
+                    <h3 id="method_getLabel">
         <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_getDataTableJson"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 181</div>
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_getLabel"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 146</div>
         <code>                    
-    string
-    <strong>getDataTableJson</strong>()</code>
+    <a href="../../../Khill/Lavacharts/Values/Label.html"><abbr title="Khill\Lavacharts\Values\Label">Label</abbr></a>
+    <strong>getLabel</strong>()</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>Returns a JSON string representation of the datatable.</p>                                </div>
+                                    <p>Returns the chart label.</p>                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -843,7 +1014,7 @@ or chaining the functions from the chart objects.</p>            </div>
                     <table class="table table-condensed">
         <tr>
             <td>
-    string</td>
+    <a href="../../../Khill/Lavacharts/Values/Label.html"><abbr title="Khill\Lavacharts\Values\Label">Label</abbr></a></td>
             <td>
 </td>
         </tr>
@@ -856,107 +1027,21 @@ or chaining the functions from the chart objects.</p>            </div>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_backgroundColor">
+                    <h3 id="method_events">
         <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_backgroundColor"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 195</div>
-        <code>                    
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
-    <strong>backgroundColor</strong>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\BackgroundColor">BackgroundColor</abbr> $bc)</code>
-    </h3>
-    <div class="details">
-                    <div class="method-description">
-                                    <p>The background color for the main area of the chart. Can be either a simple
-HTML color string, for example: 'red' or '#00cc00', or a backgroundColor object</p>                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\BackgroundColor">BackgroundColor</abbr></td>
-                <td>$bc</td>
-                <td>
-</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></td>
-            <td>
-</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_chartArea">
-        <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_chartArea"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 211</div>
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_events"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 165</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
-    <strong>chartArea</strong>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\ChartArea">ChartArea</abbr> $ca)</code>
+    <strong>events</strong>(
+    array $events)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>An object with members to configure the placement and size of the chart area
-(where the chart itself is drawn, excluding axis and legends).</p>                    <p>Two formats are supported: a number, or a number followed by %.
-A simple number is a value in pixels; a number followed by % is a percentage.</p>            </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
+                                    <p>Register javascript callbacks for specific events.</p>                    <p>Set with an associative array where the keys are events and the values are the
+javascript callback functions.</p>
 
-                    <table class="table table-condensed">
-                    <tr>
-                <td>
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\ChartArea">ChartArea</abbr></td>
-                <td>$ca</td>
-                <td>
-</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></td>
-            <td>
-</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_colors">
-        <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_colors"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 225</div>
-        <code>                    
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
-    <strong>colors</strong>(
-    array $cArr)</code>
-    </h3>
-    <div class="details">
-                    <div class="method-description">
-                                    <p>The colors to use for the chart elements. An array of strings, where each
-element is an HTML color string, for example: colors:['red','#004411'].</p>                                </div>
+<p>Valid events are:
+[ animationfinish | error | onmouseover | onmouseout | ready | select | statechange ]</p>            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -964,9 +1049,8 @@ element is an HTML color string, for example: colors:['red','#004411'].</p>     
                     <tr>
                 <td>
     array</td>
-                <td>$cArr</td>
-                <td>
-</td>
+                <td>$events</td>
+                <td>Array of events associated to a callback</td>
             </tr>
             </table>
 
@@ -1001,26 +1085,23 @@ element is an HTML color string, for example: colors:['red','#004411'].</p>     
                     <div class="method-item">
                     <h3 id="method_datatable">
         <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_datatable"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 251</div>
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_datatable"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 197</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
     <strong>datatable</strong>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\DataTable">DataTable</abbr> $d)</code>
+    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\DataTables\DataTable">DataTable</abbr> $datatable)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>Assigns wich Datatable will be used for this Chart.</p>                    <p>If a label is provided then the defined Datatable will be used.
-If called with no argument, or the chart is attempted to be generated
-without calling this function, the chart will search for a Datatable with
-the same label as the Chart.</p>            </div>
+                                    <p>Assigns a datatable to use for the Chart.</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
                 <td>
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\DataTable">DataTable</abbr></td>
-                <td>$d</td>
+    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\DataTables\DataTable">DataTable</abbr></td>
+                <td>$datatable</td>
                 <td>
 </td>
             </tr>
@@ -1045,27 +1126,107 @@ the same label as the Chart.</p>            </div>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_deferedRender">
+                    <h3 id="method_getDataTable">
         <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_deferedRender"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 267</div>
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_getDataTable"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 212</div>
         <code>                    
-    void
-    <strong>deferedRender</strong>(
-    bool $dr)</code>
+    <a href="../../../Khill/Lavacharts/DataTables/DataTable.html"><abbr title="Khill\Lavacharts\DataTables\DataTable">DataTable</abbr></a>
+    <strong>getDataTable</strong>()</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>Set up the chart with no datatable to defer rendering via AJAX</p>                                </div>
+                                    <p>Returns the DataTable</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Khill/Lavacharts/DataTables/DataTable.html"><abbr title="Khill\Lavacharts\DataTables\DataTable">DataTable</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/DataTableNotFound.html"><abbr title="Khill\Lavacharts\Exceptions\DataTableNotFound">DataTableNotFound</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDataTableJson">
+        <div class="location">in 
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_getDataTableJson"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 229</div>
+        <code>                    
+    string
+    <strong>getDataTableJson</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns a JSON string representation of the datatable.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/DataTableNotFound.html"><abbr title="Khill\Lavacharts\Exceptions\DataTableNotFound">DataTableNotFound</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_render">
+        <div class="location">in 
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_render"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 249</div>
+        <code>                    
+    string
+    <strong>render</strong>(
+    string $elemId)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Outputs the chart javascript into the page.</p>                    <p>Pass in a string of the html elementID that you want the chart to be
+rendered into.</p>            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
                 <td>
-    bool</td>
-                <td>$dr</td>
-                <td>
-</td>
+    string</td>
+                <td>$elemId</td>
+                <td>The id of an HTML element to render the chart into.</td>
             </tr>
             </table>
 
@@ -1075,9 +1236,8 @@ the same label as the Chart.</p>            </div>
                     <table class="table table-condensed">
         <tr>
             <td>
-    void</td>
-            <td>
-</td>
+    string</td>
+            <td>Javascript code blocks</td>
         </tr>
     </table>
 
@@ -1098,19 +1258,17 @@ the same label as the Chart.</p>            </div>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_events">
+                    <h3 id="method_animation">
         <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_events"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 293</div>
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_animation"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 268</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
-    <strong>events</strong>(
-    array $e)</code>
+    <strong>animation</strong>(
+    array $animationConfig)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>Register javascript callbacks for specific events.</p>                    <p>Valid values include:
-[ animationfinish | error | onmouseover | onmouseout | ready | select ]
-associated to a respective pre-defined javascript function as the callback.</p>            </div>
+                                    <p>Set the animation options for a chart.</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1118,8 +1276,138 @@ associated to a respective pre-defined javascript function as the callback.</p> 
                     <tr>
                 <td>
     array</td>
-                <td>$e</td>
-                <td>Array of events associated to a callback</td>
+                <td>$animationConfig</td>
+                <td>Animation options</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_backgroundColor">
+        <div class="location">in 
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_backgroundColor"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 282</div>
+        <code>                    
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
+    <strong>backgroundColor</strong>(
+    array $backgroundColorConfig)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>The background color for the main area of the chart.</p>                    <p>Can be a simple HTML color string, or hex code, for example: 'red' or '#00cc00'</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    array</td>
+                <td>$backgroundColorConfig</td>
+                <td>Options for the chart's background color</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_chartArea">
+        <div class="location">in 
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_chartArea"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 299</div>
+        <code>                    
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
+    <strong>chartArea</strong>(
+    array $chartAreaConfig)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>An object with members to configure the placement and size of the chart area
+(where the chart itself is drawn, excluding axis and legends).</p>                    <p>Two formats are supported: a number, or a number followed by %.
+A simple number is a value in pixels; a number followed by % is a percentage.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    array</td>
+                <td>$chartAreaConfig</td>
+                <td>Options for the chart area.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_colors">
+        <div class="location">in 
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_colors"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 316</div>
+        <code>                    
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
+    <strong>colors</strong>(
+    array $colorArray)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>The colors to use for the chart elements.</p>                    <p>An array of strings, where each element is an HTML color string
+for example:['red','#004411']</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    array</td>
+                <td>$colorArray</td>
+                <td>
+</td>
             </tr>
             </table>
 
@@ -1154,24 +1442,23 @@ associated to a respective pre-defined javascript function as the callback.</p> 
                     <div class="method-item">
                     <h3 id="method_fontSize">
         <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_fontSize"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 334</div>
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_fontSize"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 340</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
     <strong>fontSize</strong>(
-    int $fs)</code>
+    integer $fontSize)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>The default font size, in pixels, of all text in the chart. You can
-override this using properties for specific chart elements.</p>                                </div>
+                                    <p>The default font size, in pixels, of all text in the chart.</p>                    <p>You can override this using properties for specific chart elements.</p>            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
                 <td>
-    int</td>
-                <td>$fs</td>
+    integer</td>
+                <td>$fontSize</td>
                 <td>
 </td>
             </tr>
@@ -1208,16 +1495,15 @@ override this using properties for specific chart elements.</p>                 
                     <div class="method-item">
                     <h3 id="method_fontName">
         <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_fontName"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 355</div>
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_fontName"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 356</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
     <strong>fontName</strong>(
-    string $fn)</code>
+    string $fontName)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>The default font face for all text in the chart. You can override this
-using properties for specific chart elements.</p>                                </div>
+                                    <p>The default font face for all text in the chart.</p>                    <p>You can override this using properties for specific chart elements.</p>            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1225,7 +1511,7 @@ using properties for specific chart elements.</p>                               
                     <tr>
                 <td>
     string</td>
-                <td>$fn</td>
+                <td>$fontName</td>
                 <td>
 </td>
             </tr>
@@ -1262,11 +1548,11 @@ using properties for specific chart elements.</p>                               
                     <div class="method-item">
                     <h3 id="method_height">
         <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_height"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 375</div>
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_height"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 370</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
     <strong>height</strong>(
-    int $h)</code>
+    int $height)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -1278,7 +1564,7 @@ using properties for specific chart elements.</p>                               
                     <tr>
                 <td>
     int</td>
-                <td>$h</td>
+                <td>$height</td>
                 <td>
 </td>
             </tr>
@@ -1315,27 +1601,24 @@ using properties for specific chart elements.</p>                               
                     <div class="method-item">
                     <h3 id="method_legend">
         <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_legend"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 398</div>
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_legend"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 386</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
     <strong>legend</strong>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Legend">Legend</abbr> $l)</code>
+    array $legendConfig)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>An object with members to configure various aspects of the legend. To
-specify properties of this object, create a new legend() object, set the
-values then pass it to this function or to the constructor.</p>                                </div>
+                                    <p>An object with members to configure various aspects of the legend.</p>                    <p>To specify properties of this object, pass in an array of valid options.</p>            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
                 <td>
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Legend">Legend</abbr></td>
-                <td>$l</td>
-                <td>
-</td>
+    array</td>
+                <td>$legendConfig</td>
+                <td>Options for the chart's legend.</td>
             </tr>
             </table>
 
@@ -1368,95 +1651,13 @@ values then pass it to this function or to the constructor.</p>                 
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_optionsToJson">
-        <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_optionsToJson"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 408</div>
-        <code>                    
-    string
-    <strong>optionsToJson</strong>()</code>
-    </h3>
-    <div class="details">
-                    <div class="method-description">
-                                    <p>Returns a JSON string representation of the chart's properties.</p>                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>
-    string</td>
-            <td>
-</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_render">
-        <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_render"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 425</div>
-        <code>                    
-    string
-    <strong>render</strong>(
-    string $ei)</code>
-    </h3>
-    <div class="details">
-                    <div class="method-description">
-                                    <p>Outputs the chart javascript into the page</p>                    <p>Pass in a string of the html elementID that you want the chart to be
-rendered into.</p>            </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>
-    string</td>
-                <td>$ei</td>
-                <td>The id of an HTML element to render the chart into.</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>
-    string</td>
-            <td>Javscript code blocks</td>
-        </tr>
-    </table>
-
-            
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidElementId.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidElementId">InvalidElementId</abbr></a></td>
-                <td>
-</td>
-            </tr>
-            </table>
-
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_title">
         <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_title"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 440</div>
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_title"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 400</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
     <strong>title</strong>(
-    string $t)</code>
+    string $title)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -1468,7 +1669,7 @@ rendered into.</p>            </div>
                     <tr>
                 <td>
     string</td>
-                <td>$t</td>
+                <td>$title</td>
                 <td>
 </td>
             </tr>
@@ -1505,16 +1706,17 @@ rendered into.</p>            </div>
                     <div class="method-item">
                     <h3 id="method_titlePosition">
         <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_titlePosition"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 463</div>
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_titlePosition"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 419</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
     <strong>titlePosition</strong>(
-    string $tp)</code>
+    string $titlePosition)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>Where to place the chart title, compared to the chart area. Supported values:
-'in' - Draw the title inside the chart area.</p>                    <p>'out' - Draw the title outside the chart area.
+                                    <p>Where to place the chart title, compared to the chart area.</p>                    <p>Supported values:
+'in'   - Draw the title inside the chart area.
+'out'  - Draw the title outside the chart area.
 'none' - Omit the title.</p>            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
@@ -1523,7 +1725,7 @@ rendered into.</p>            </div>
                     <tr>
                 <td>
     string</td>
-                <td>$tp</td>
+                <td>$titlePosition</td>
                 <td>
 </td>
             </tr>
@@ -1560,24 +1762,23 @@ rendered into.</p>            </div>
                     <div class="method-item">
                     <h3 id="method_titleTextStyle">
         <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_titleTextStyle"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 492</div>
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_titleTextStyle"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 439</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
     <strong>titleTextStyle</strong>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\TextStyle">TextStyle</abbr> $ts)</code>
+    <a href="../../../Khill/Lavacharts/Configs/TextStyle.html"><abbr title="Khill\Lavacharts\Configs\TextStyle">TextStyle</abbr></a> $textStyle)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>An object that specifies the title text style. create a new textStyle()
-object, set the values then pass it to this function or to the constructor.</p>                                </div>
+                                    <p>An array of options for defining the title text style.</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
                 <td>
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\TextStyle">TextStyle</abbr></td>
-                <td>$ts</td>
+    <a href="../../../Khill/Lavacharts/Configs/TextStyle.html"><abbr title="Khill\Lavacharts\Configs\TextStyle">TextStyle</abbr></a></td>
+                <td>$textStyle</td>
                 <td>
 </td>
             </tr>
@@ -1614,27 +1815,24 @@ object, set the values then pass it to this function or to the constructor.</p> 
                     <div class="method-item">
                     <h3 id="method_tooltip">
         <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_tooltip"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 508</div>
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_tooltip"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 452</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
     <strong>tooltip</strong>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Tooltip">Tooltip</abbr> $t)</code>
+    array $tooltip)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>An object with members to configure various tooltip elements. To specify
-properties of this object, create a new tooltip() object, set the values
-then pass it to this function or to the constructor.</p>                                </div>
+                                    <p>An object with members to configure various tooltip elements.</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
                 <td>
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Tooltip">Tooltip</abbr></td>
-                <td>$t</td>
-                <td>
-</td>
+    array</td>
+                <td>$tooltip</td>
+                <td>Options for the tooltips</td>
             </tr>
             </table>
 
@@ -1669,11 +1867,11 @@ then pass it to this function or to the constructor.</p>                        
                     <div class="method-item">
                     <h3 id="method_width">
         <div class="location">in 
-    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_width"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 521</div>
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html#method_width"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a> at line 464</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
     <strong>width</strong>(
-    int $w)</code>
+    int $width)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -1685,7 +1883,7 @@ then pass it to this function or to the constructor.</p>                        
                     <tr>
                 <td>
     int</td>
-                <td>$w</td>
+                <td>$width</td>
                 <td>
 </td>
             </tr>
@@ -1720,12 +1918,56 @@ then pass it to this function or to the constructor.</p>                        
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_colorAxis">
+        <div class="location">in 
+    <a href="../../../Khill/Lavacharts/Traits/ColorAxisTrait.html#method_colorAxis"><abbr title="Khill\Lavacharts\Traits\ColorAxisTrait">ColorAxisTrait</abbr></a> at line 16</div>
+        <code>                    
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a>
+    <strong>colorAxis</strong>(
+    array $colorAxisConfig)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>An object that specifies a mapping between color column values
+and colors or a gradient scale.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    array</td>
+                <td>$colorAxisConfig</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Khill/Lavacharts/Charts/Chart.html"><abbr title="Khill\Lavacharts\Charts\Chart">Chart</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_cellColor">
-        <div class="location">at line 111</div>
+        <div class="location">at line 164</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
     <strong>cellColor</strong>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr> $stroke)</code>
+    array $strokeConfig)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -1736,8 +1978,8 @@ then pass it to this function or to the constructor.</p>                        
                     <table class="table table-condensed">
                     <tr>
                 <td>
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr></td>
-                <td>$stroke</td>
+    array</td>
+                <td>$strokeConfig</td>
                 <td>
 </td>
             </tr>
@@ -1763,11 +2005,11 @@ then pass it to this function or to the constructor.</p>                        
             </div>
                     <div class="method-item">
                     <h3 id="method_cellSize">
-        <div class="location">at line 125</div>
+        <div class="location">at line 176</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
     <strong>cellSize</strong>(
-    int $cellSize)</code>
+    integer $cellSize)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -1778,7 +2020,7 @@ then pass it to this function or to the constructor.</p>                        
                     <table class="table table-condensed">
                     <tr>
                 <td>
-    int</td>
+    integer</td>
                 <td>$cellSize</td>
                 <td>
 </td>
@@ -1798,6 +2040,16 @@ then pass it to this function or to the constructor.</p>                        
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigValue.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigValue">InvalidConfigValue</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -1805,11 +2057,11 @@ then pass it to this function or to the constructor.</p>                        
             </div>
                     <div class="method-item">
                     <h3 id="method_dayOfWeekLabel">
-        <div class="location">at line 146</div>
+        <div class="location">at line 194</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
     <strong>dayOfWeekLabel</strong>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\TextStyle">TextStyle</abbr> $label)</code>
+    <a href="../../../Khill/Lavacharts/Configs/TextStyle.html"><abbr title="Khill\Lavacharts\Configs\TextStyle">TextStyle</abbr></a> $labelConfig)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -1820,8 +2072,8 @@ then pass it to this function or to the constructor.</p>                        
                     <table class="table table-condensed">
                     <tr>
                 <td>
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\TextStyle">TextStyle</abbr></td>
-                <td>$label</td>
+    <a href="../../../Khill/Lavacharts/Configs/TextStyle.html"><abbr title="Khill\Lavacharts\Configs\TextStyle">TextStyle</abbr></a></td>
+                <td>$labelConfig</td>
                 <td>
 </td>
             </tr>
@@ -1847,11 +2099,11 @@ then pass it to this function or to the constructor.</p>                        
             </div>
                     <div class="method-item">
                     <h3 id="method_dayOfWeekRightSpace">
-        <div class="location">at line 159</div>
+        <div class="location">at line 207</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
     <strong>dayOfWeekRightSpace</strong>(
-    int $space)</code>
+    integer $space)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -1863,7 +2115,7 @@ the left edge of the chart day squares.</p>                                </div
                     <table class="table table-condensed">
                     <tr>
                 <td>
-    int</td>
+    integer</td>
                 <td>$space</td>
                 <td>
 </td>
@@ -1883,6 +2135,16 @@ the left edge of the chart day squares.</p>                                </div
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigValue.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigValue">InvalidConfigValue</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -1890,7 +2152,7 @@ the left edge of the chart day squares.</p>                                </div
             </div>
                     <div class="method-item">
                     <h3 id="method_daysOfWeek">
-        <div class="location">at line 180</div>
+        <div class="location">at line 226</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
     <strong>daysOfWeek</strong>(
@@ -1925,6 +2187,16 @@ the left edge of the chart day squares.</p>                                </div
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigValue.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigValue">InvalidConfigValue</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -1932,11 +2204,11 @@ the left edge of the chart day squares.</p>                                </div
             </div>
                     <div class="method-item">
                     <h3 id="method_focusedCellColor">
-        <div class="location">at line 202</div>
+        <div class="location">at line 245</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
     <strong>focusedCellColor</strong>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr> $stroke)</code>
+    <a href="../../../Khill/Lavacharts/Configs/Stroke.html"><abbr title="Khill\Lavacharts\Configs\Stroke">Stroke</abbr></a> $strokeConfig)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -1948,8 +2220,8 @@ calendar charts will highlight the square.</p>                                </
                     <table class="table table-condensed">
                     <tr>
                 <td>
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr></td>
-                <td>$stroke</td>
+    <a href="../../../Khill/Lavacharts/Configs/Stroke.html"><abbr title="Khill\Lavacharts\Configs\Stroke">Stroke</abbr></a></td>
+                <td>$strokeConfig</td>
                 <td>
 </td>
             </tr>
@@ -1975,11 +2247,11 @@ calendar charts will highlight the square.</p>                                </
             </div>
                     <div class="method-item">
                     <h3 id="method_monthLabel">
-        <div class="location">at line 216</div>
+        <div class="location">at line 256</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
     <strong>monthLabel</strong>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\TextStyle">TextStyle</abbr> $label)</code>
+    array $labelConfig)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -1990,8 +2262,8 @@ calendar charts will highlight the square.</p>                                </
                     <table class="table table-condensed">
                     <tr>
                 <td>
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\TextStyle">TextStyle</abbr></td>
-                <td>$label</td>
+    array</td>
+                <td>$labelConfig</td>
                 <td>
 </td>
             </tr>
@@ -2017,11 +2289,11 @@ calendar charts will highlight the square.</p>                                </
             </div>
                     <div class="method-item">
                     <h3 id="method_monthOutlineColor">
-        <div class="location">at line 228</div>
+        <div class="location">at line 267</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
     <strong>monthOutlineColor</strong>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr> $stroke)</code>
+    array $strokeConfig)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -2032,8 +2304,8 @@ calendar charts will highlight the square.</p>                                </
                     <table class="table table-condensed">
                     <tr>
                 <td>
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr></td>
-                <td>$stroke</td>
+    array</td>
+                <td>$strokeConfig</td>
                 <td>
 </td>
             </tr>
@@ -2059,7 +2331,7 @@ calendar charts will highlight the square.</p>                                </
             </div>
                     <div class="method-item">
                     <h3 id="method_underMonthSpace">
-        <div class="location">at line 243</div>
+        <div class="location">at line 280</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
     <strong>underMonthSpace</strong>(
@@ -2095,6 +2367,16 @@ the top of the day squares.</p>                                </div>
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigValue.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigValue">InvalidConfigValue</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -2102,11 +2384,11 @@ the top of the day squares.</p>                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_underYearSpace">
-        <div class="location">at line 265</div>
+        <div class="location">at line 300</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
     <strong>underYearSpace</strong>(
-    int $space)</code>
+    integer $space)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -2118,7 +2400,7 @@ the bottom of the chart.</p>                                </div>
                     <table class="table table-condensed">
                     <tr>
                 <td>
-    int</td>
+    integer</td>
                 <td>$space</td>
                 <td>
 </td>
@@ -2138,6 +2420,16 @@ the bottom of the chart.</p>                                </div>
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigValue.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigValue">InvalidConfigValue</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -2145,11 +2437,11 @@ the bottom of the chart.</p>                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_unusedMonthOutlineColor">
-        <div class="location">at line 286</div>
+        <div class="location">at line 318</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
     <strong>unusedMonthOutlineColor</strong>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr> $stroke)</code>
+    array $strokeConfig)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -2160,50 +2452,8 @@ the bottom of the chart.</p>                                </div>
                     <table class="table table-condensed">
                     <tr>
                 <td>
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Stroke">Stroke</abbr></td>
-                <td>$stroke</td>
-                <td>
-</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>
-    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a></td>
-            <td>
-</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_colorAxis">
-        <div class="location">at line 300</div>
-        <code>                    
-    <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
-    <strong>colorAxis</strong>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\ColorAxis">ColorAxis</abbr> $colorAxis)</code>
-    </h3>
-    <div class="details">
-                    <div class="method-description">
-                                    <p>An object that specifies a mapping between color column values and colors or a gradient scale.</p>                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\ColorAxis">ColorAxis</abbr></td>
-                <td>$colorAxis</td>
+    array</td>
+                <td>$strokeConfig</td>
                 <td>
 </td>
             </tr>
@@ -2229,7 +2479,7 @@ the bottom of the chart.</p>                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_forceIFrame">
-        <div class="location">at line 315</div>
+        <div class="location">at line 331</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
     <strong>forceIFrame</strong>(
@@ -2264,6 +2514,16 @@ the bottom of the chart.</p>                                </div>
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Khill/Lavacharts/Exceptions/InvalidConfigValue.html"><abbr title="Khill\Lavacharts\Exceptions\InvalidConfigValue">InvalidConfigValue</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -2271,11 +2531,11 @@ the bottom of the chart.</p>                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_noDataPattern">
-        <div class="location">at line 334</div>
+        <div class="location">at line 349</div>
         <code>                    
     <a href="../../../Khill/Lavacharts/Charts/CalendarChart.html"><abbr title="Khill\Lavacharts\Charts\CalendarChart">CalendarChart</abbr></a>
     <strong>noDataPattern</strong>(
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Color">Color</abbr> $color)</code>
+    array $colorConfig)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -2286,8 +2546,8 @@ the bottom of the chart.</p>                                </div>
                     <table class="table table-condensed">
                     <tr>
                 <td>
-    <abbr title="Khill\Lavacharts\Charts\Khill\Lavacharts\Configs\Color">Color</abbr></td>
-                <td>$color</td>
+    array</td>
+                <td>$colorConfig</td>
                 <td>
 </td>
             </tr>
